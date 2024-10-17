@@ -9,107 +9,95 @@ import { IoMdMail } from "react-icons/io";
 
 const Footer = () => {
   return (
-    <div className="h-full bg-red-800 py-4">
-      <div className="grid md:grid-cols-3   justify-center   text-white">
-        <div>
-          <div className="flex flex-col gap-2 items-center">
-            <h1 className="font-bold text-lg ">MENU</h1>
-            <p className="hover:text-yellow-500 text-sm">
-              {" "}
-              <a href="/menu/pizzas">Pizza</a>
-            </p>
-            <p className="hover:text-yellow-500 text-sm">
-              {" "}
-              <a href="/menu/sides">Sides</a>
-            </p>
-            <p className="hover:text-yellow-500 text-sm">
-              {" "}
-              <a href="/menu/drinks">Drinks</a>
-            </p>
-            <p className="hover:text-yellow-500 text-sm">
-              {" "}
-              <a href="/menu/desserts">Desserts</a>
-            </p>
-            <p className="hover:text-yellow-500 text-sm">
-              {" "}
-              <a href="/menu/dips">Dips</a>
-            </p>
-          </div>
-          <div className="hidden md:flex justify-center m-3">
-            <hr className="border border-white w-[300px] h-[4px]  " />
-          </div>
-          <div>
-            <div className="flex gap-2 justify-center text-sm pt-1 lg:text-base ">
-              <p className="hover:hover:text-yellow-500">
-                <a href="/menu/deals">
-                  Deals <sup className="">*</sup>
-                </a>
-              </p>
-            
-            </div>
-
-          
-          </div>
+    <div className="h-full bg-[#c80f2e] p-4 lg:px-40 ">
+      <div className="flex justify-between   md:flex-row flex-col   text-white pb-5 border-b  border-b-neutral-300">
+        <div className="flex  md:gap-5 gap-2 justify-center md:justify-start  items-center md:px-5 py-5 w-full  md:text-xl  md:border-none border-b border-b-neutral-300">
+          <p className="hover:hover:text-yellow-500">
+            <a href="/menu/deals">
+              Deals <sup className="">*</sup>
+            </a>
+          </p>
+          <p className="hover:text-yellow-500">
+            {" "}
+            <a href="/menu/pizzas">Pizza</a>
+          </p>
+          <p className="hover:text-yellow-500">
+            {" "}
+            <a href="/menu/sides">Sides</a>
+          </p>
+          <p className="hover:text-yellow-500">
+            {" "}
+            <a href="/menu/drinks">Drinks</a>
+          </p>
+          <p className="hover:text-yellow-500">
+            {" "}
+            <a href="/menu/desserts">Desserts</a>
+          </p>
+          <p className="hover:text-yellow-500">
+            {" "}
+            <a href="/menu/dips">Dips</a>
+          </p>
         </div>
 
-
-
-        <div className="flex   flex-col gap-2 items-center ">
-        <div className="md:hidden flex justify-center  m-4">
-            <hr className=" border border-white w-[300px] h-[4px]  " />
-          </div>
-          <h1 className="font-bold text-lg">SOCIAL LINKS</h1>
-
-          <div className="flex justify-center  items-center gap-5 m-2">
-           
-            <a href="https://www.facebook.com/HotHousePizzaNorthwood" target="_blank" rel="noopener noreferrer"  className="hover:text-yellow-500">
-              <FiFacebook size={24} />
-            </a>
-            <a href="https://www.instagram.com/hothousepizzanorthwood" target="_blank" rel="noopener noreferrer"  className="hover:text-yellow-500">
-              <SlSocialInstagram size={24} />
-            </a>
-            <a href="https://wa.me/+447469367116" target="_blank" rel="noopener noreferrer"  className="hover:text-yellow-500">
-              <SiWhatsapp size={24} />
-            </a>
-           
-          </div>
-          
-        </div>
         <div className="flex   flex-col gap-2 items-center justify-between ">
-        <div className="md:hidden flex justify-center  m-4">
-            <hr className="border border-white w-[300px] h-[4px]  " />
+          <div className=" flex flex-col justify-center px-3">
+            <p className="flex justify-center  mt-2  ">
+              <FaStore className="mr-2" size={20} />
+              <span className=" text-center text-nowrap">
+                Store : 91 Joel St, Pinner, Northwood HA6 1LW, UK
+              </span>
+            </p>
+            <p className="flex items-center mt-2">
+              <IoMdMail className="mr-2" size={20} />
+              <span className="text-center">
+                Email : Hothousenorthwood@gmail.com
+              </span>
+            </p>
+            <p className="flex items-center mt-2">
+              <FaPhone className="mr-2" size={20} />
+              <span className="text-center"> Contact Us : 01923510520</span>
+            </p>
           </div>
-          <div className="text-center space-y-[8px]">
-          <h1 className="font-bold text-lg">POLICIES</h1>
+        </div>
+      </div>
 
+      <div className="w-full flex text-white justify-between px-5 items-center">
+        <div className="flex gap-5 py-3">
           <p className="hover:text-yellow-500 text-sm cursor-pointer">
             {" "}
             <a href="/termsAndConditions">TERMS & CONDITIONS</a>
           </p>
-        
+
           <p className="hover:text-yellow-500 text-sm cursor-pointer">
             {" "}
             <a href="/refundPolicy">Refund Policy</a>
           </p>
-          </div>
-               <div className="mt-4 flex flex-col justify-center items-center">
-                <p className="flex justify-center  mt-2 mx-3 ">
-                  <FaStore  className="mr-2" size={20} />
-                 <span className=" text-center">Store : 91 Joel St, Pinner, Northwood HA6 1LW, UK</span> 
-                </p>
-                <p className="flex items-center mt-2">
-                  <IoMdMail  className="mr-2" size={20} />
-                  <span className="text-center">Email : Hothousenorthwood@gmail.com</span>
-                  
-                </p>
-                <p className="flex items-center mt-2">
-                  <FaPhone className="mr-2" size={20} />
-                  <span className="text-center">  Contact Us : 01923510520</span>
-              
-                </p>
-        
-     
         </div>
+        <div className="flex justify-center  items-center gap-5 m-2">
+          <a
+            href="https://www.facebook.com/HotHousePizzaNorthwood"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-500"
+          >
+            <FiFacebook size={24} />
+          </a>
+          <a
+            href="https://www.instagram.com/hothousepizzanorthwood"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-500"
+          >
+            <SlSocialInstagram size={24} />
+          </a>
+          <a
+            href="https://wa.me/+447469367116"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-yellow-500"
+          >
+            <SiWhatsapp size={24} />
+          </a>
         </div>
       </div>
     </div>
