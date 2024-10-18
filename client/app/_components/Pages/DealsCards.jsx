@@ -40,7 +40,7 @@ const DealsCards = ({ data, path }) => {
           <img
             src={data.banner}
             alt="Card Image"
-            className="rounded-t-md w-full object-cover"
+            className="rounded-t-md w-full h-48"
           />
         </Link>
         <div className="px-3">
@@ -68,7 +68,7 @@ const DealsCards = ({ data, path }) => {
       <div className="mt-3 mb-1 ">
         <div className="max-w-sm mx-2 flex gap-1">
           {data.sizes?.length === 1 ? (
-            <div className="w-full p-2 border border-gray-300 rounded-lg bg-gray-200 text-gray-500">
+            <div className="w-full">
               {`Pizza Size ${data.sizes[0].size} - £ ${data.sizes[0].price}`}
             </div>
           ) : (
@@ -88,9 +88,9 @@ const DealsCards = ({ data, path }) => {
               pathname: path ? `${path}/deals/deals_view` : `deals/deals_view`,
               query: { card_id: data?._id, size_id: selectedOption?.value },
             }}
-            className="hover:bg-green-700 bg-green-600 text-white p-2 rounded-lg"
+            className="hover:bg-[#08579C] bg-[#08579C] text-white p-2  w-36 rounded-lg"
           >
-            Go
+            Just Deal
           </Link>
         </div>
       </div>
