@@ -128,7 +128,7 @@ const HomePage = () => {
     ) : (
       <div className="flex item-center justify-center pt-[25vh] h-[85vh] ">
         {/* <ClockLoader color="#991b1b" size={100} className="border"/> */}
-        <Image src="/HOTPIZZALOGO.jpg" alt="Pizza Logo"  width={300} height={300} className="h-[10vh] w-[30vw]  object-contain" />
+        <Image src="/HOTPIZZALOGO.jpg" alt="Pizza Logo"  width={900} height={300} className="h-[10vh] w-[90vw]  object-contain" />
       </div>
     )}
     </>

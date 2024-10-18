@@ -12,7 +12,12 @@ const nextConfig = {
         {
         protocol: "http",
         hostname: "res.cloudinary.com"
-      }]
+      },
+        {
+        protocol: "https",
+        hostname: "img-api.yumapos.co.uk"
+      }
+    ]
       },
 };
 
