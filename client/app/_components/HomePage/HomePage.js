@@ -89,10 +89,10 @@ const HomePage = () => {
               pathname: `menu/deals/deals_view`,
               query: { card_id: el?.deal?._id, size_id: el?.deal?.sizes[0]?._id  },
             }}>
-                <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[70%] sm:h-fit md:[30vh] md:h-fit xl:h-[65vh] 2xl:w-[60%] 2xl:h-[70vh]  object-cover" />
+                <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[90%] sm:h-fit md:[30vh] md:h-fit xl:h-[50vh] 2xl:w-[60%] 2xl:h-[40vh] rounded-xl " />
                 </Link>
                 :
-                <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[70%] sm:h-fit md:[30vh] md:h-fit xl:h-[65vh] 2xl:w-[60%] 2xl:h-[70vh]  object-cover" />}
+                <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[90%] sm:h-fit md:[30vh] md:h-fit xl:h-[50vh] 2xl:w-[60%] 2xl:h-[40vh] rounded-xl  " />}
        
               </SwiperSlide>
             );
@@ -103,18 +103,21 @@ const HomePage = () => {
       <div className="mx-auto container max-w-7xl px-5 lg:px-10">
         <header class="text-center pb-10  bg-white">
           <div class="flex items-center justify-center my-2">
-            <div class="flex-grow border-t border-red-800"></div>
+            {/* <div class="flex-grow border-t border-red-800"></div> */}
 
-            <div class="flex-grow border-t border-red-800"></div>
+            {/* <div class="flex-grow border-t border-red-800"></div> */}
           </div>
 
           <div class="flex items-center justify-center">
-            <div class="flex-grow border-t border-red-800"></div>
-            <h1 class="px-4 text-red-800 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
-              TOP HOT DEALS
+            {/* <div class="flex-grow border-t border-red-800"></div> */}
+            <h1 className="px-6 bg-red-800 py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105 animate-fade-in">
+            Top Hot Deals
             </h1>
-            <div class="flex-grow border-t border-red-800"></div>
+            {/* <div class="flex-grow border-t border-red-800"></div> */}
+         
           </div>
+             
+          {/* <div class="flex-grow border-t border-red-800"></div> */}
         </header>
       </div>
 
@@ -128,7 +131,7 @@ const HomePage = () => {
     ) : (
       <div className="flex item-center justify-center pt-[25vh] h-[85vh] ">
         {/* <ClockLoader color="#991b1b" size={100} className="border"/> */}
-        <Image src="/HOTPIZZALOGO.jpg" alt="Pizza Logo"  width={900} height={300} className="h-[10vh] w-[90vw]  object-contain" />
+        <Image src="/HOTPIZZALOGO.jpg" alt="Pizza Logo"  width={300} height={300} className="h-[10vh] w-[30vw]  object-contain" />
       </div>
     )}
     </>
