@@ -37,14 +37,18 @@ const Deals = () => {
 
   return (
     <>
-      <div className=" mx-auto container pb-10">
+      <div className=" mx-auto container pb-10 px-2">
         <div className=" px-10 pt-5 ">
           <header class="text-center  bg-white">
             <div className="flex items-center justify-center mb-2">
               <div className="flex-grow border-t border-red-800"></div>
-              <h1 className="px-4 text-red-800 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                TOP HOT DEALS
-              </h1>
+              <h1 className="px-6 py-6 text-white text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105 animate-fade-in bg-gradient-to-r from-[#c80f2e] to-[#c80f2e] shadow-lg" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}>
+  Top Hot Deals
+</h1>
+
+
+
+
               <div className="flex-grow border-t border-red-800"></div>
             </div>
           </header>

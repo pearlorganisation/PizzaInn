@@ -112,23 +112,43 @@ const Header = () => {
             </div>
           ))}
       </div>
-      <div className="hidden w-full  md:flex absolute top-96 right-0 md:justify-end gap-[2px] md:gap-1 p-2 md:p-0">
+      <div className="hidden w-full md:flex  right-0 md:justify-end gap-[2px] md:gap-1 p-2 md:p-0 bottom-20  fixed ">
   <a
     href="https://wa.me/+447469367116"
     target="_blank"
     rel="noopener noreferrer"
-    className="inline-flex items-center  text-white py-2 px-4 text-base rounded-b-md  "
+    className="inline-flex items-center text-white py-2 px-4 text-base rounded-b-md"
   >
-    <SiWhatsapp className='bg-yellow-500 text-white p-3 rounded-full shadow-lg hover:bg-yellow-600 transition duration-300 cursor-pointer' size={50} />
-    <span className="ml-2"></span>
-  </a>
+   <div className="fixed bottom-0 left-0 right-0 flex justify-between p-4 ">
+  <div className="relative group inline-flex items-center ">
+    <SiWhatsapp
+      className='bg-green-500 text-white p-3 rounded-full shadow-lg transition duration-300 cursor-pointer group-hover:bg-white-600'
+      size={50}
+    />
+  </div>
+
+  <div className="relative group inline-flex items-center">
   <a
-    href="/profile?tab=3"
-    className="inline-flex items-center  text-white text-base rounded-b-md "
-  >
-    <RiRefreshFill size={50} className='transition duration-300 cursor-pointer bg-[#c80f2e]  text-white p-3 rounded-full '/> 
-    <span className="ml-2"></span>
-  </a>
+  href="/profile?tab=3"
+  className="inline-flex items-center text-white text-base rounded-b-md"
+>
+    <RiRefreshFill
+      size={50}
+      className='bg-[#c80f2e] text-white p-3 rounded-full  transition duration-300 cursor-pointer  shadow-lg hover:shadow-xl'
+    />  </a>
+  </div>
+</div>
+
+
+
+
+{/* <RiRefreshFill
+  size={50}
+  className='transition duration-300 cursor-pointer bg-[#c80f2e] text-white p-3 rounded-full shadow-lg hover:shadow-xl'
+/> */}
+  <span className="ml-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Order Now</span>
+</a>
+
 </div>
 
 <div className="md:hidden flex justify-center">
@@ -136,7 +156,7 @@ const Header = () => {
     href="https://wa.me/+447469367116"
     target="_blank"
     rel="noopener noreferrer"
-    className="w-full border-r border-r-white justify-center inline-flex items-center bg-[#b9d3eb] text-white py-2 px-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-white hover:text-[#c80f2e]"
+    className="w-full border-r border-r-white justify-center inline-flex items-center bg-[#08579c]  text-white py-2 px-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-white hover:text-[#c80f2e]"
   >
     <SiWhatsapp size={22} />
     <span className="pl-2 text-sm">Whatsapp</span>
@@ -146,7 +166,7 @@ const Header = () => {
     className="w-full border-r border-r-white justify-center inline-flex items-center bg-white text-[#c80f2e]  py-2 px-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-[#c80f2e] hover:text-white"
   >
     <RiRefreshFill size={25} />
-    <span className="pl-2 text-sm">Reorder Now</span>
+    <span className="pl-2 text-sm font-bold">Reorder Now</span>
   </a>
 </div>
 

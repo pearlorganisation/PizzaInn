@@ -90,6 +90,7 @@ const HomePage = () => {
               query: { card_id: el?.deal?._id, size_id: el?.deal?.sizes[0]?._id  },
             }}>
                 <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[90%] sm:h-fit md:[30vh] md:h-fit xl:h-[50vh] 2xl:w-[60%] 2xl:h-[40vh] rounded-xl " />
+              
                 </Link>
                 :
                 <Image width={2500} height={1000}  src={el?.banner} alt="Deals Banner" className="h-full mx-auto w-full lg:w-[70%] xl:w-[90%] sm:h-fit md:[30vh] md:h-fit xl:h-[50vh] 2xl:w-[60%] 2xl:h-[40vh] rounded-xl  " />}
@@ -100,17 +101,18 @@ const HomePage = () => {
       </Swiper>
       </div>
       <>
-      <div className="mx-auto container max-w-7xl px-5 lg:px-10">
-        <header class="text-center pb-10  bg-white">
-          <div class="flex items-center justify-center my-2">
-            {/* <div class="flex-grow border-t border-red-800"></div> */}
+      <div className=" mx-auto container pb-10 px-10">
+      <div className=" px-10 pt-5 ">
+      <header class="text-center  bg-white">
+      <div className="flex items-center justify-center mb-2">
+      {/* <div class="flex-grow border-t border-red-800"></div> */}
 
             {/* <div class="flex-grow border-t border-red-800"></div> */}
           </div>
 
           <div class="flex items-center justify-center">
             {/* <div class="flex-grow border-t border-red-800"></div> */}
-            <h1 className="px-6 bg-red-800 py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105 animate-fade-in">
+            <h1 className="px-6  bg-[#c80f2e] py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105 animate-fade-in" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}>
             Top Hot Deals
             </h1>
             {/* <div class="flex-grow border-t border-red-800"></div> */}
@@ -120,9 +122,9 @@ const HomePage = () => {
           {/* <div class="flex-grow border-t border-red-800"></div> */}
         </header>
       </div>
-
+</div>
       {popularDealData ? (
-      <div className="flex gap-8 mb-10 flex-wrap justify-center">
+        <div className="p-8 gap-10 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4   place-content-center">
         {Array.isArray(popularDealData) &&
           popularDealData.map((el) => (
             <DealsCards key={el.id} path={"menu"} data={el} />
@@ -131,6 +133,7 @@ const HomePage = () => {
     ) : (
       <div className="flex item-center justify-center pt-[25vh] h-[85vh] ">
         {/* <ClockLoader color="#991b1b" size={100} className="border"/> */}
+
         <Image src="/HOTPIZZALOGO.jpg" alt="Pizza Logo"  width={300} height={300} className="h-[10vh] w-[30vw]  object-contain" />
       </div>
     )}
