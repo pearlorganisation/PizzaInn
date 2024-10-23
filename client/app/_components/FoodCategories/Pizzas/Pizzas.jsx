@@ -7,6 +7,7 @@ import Link from "next/link";
 import { useDispatch } from "react-redux";
 import { clearSet } from "@/app/lib/features/cartSlice/cartSlice";
 import { getCustomizationDetails } from "@/app/lib/features/orderDetails/orderDetailsslice";
+import { VscActivateBreakpoints } from "react-icons/vsc";
 
 // -------------------data fetching function-----------------------
 const pizzaFetcher = (...args) => fetch(...args).then((res) => res.json());

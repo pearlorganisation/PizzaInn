@@ -11,17 +11,23 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+
 @font-face {
-  font-family: "Questrial-Regular";
-  src: local("Questrial-Regular"),
-    url("/Questrial-Regular.ttf") format("opentype");
+  font-family: "Proxima Nova Rg";
+  src: url("/Proxima Nova Font.woff2") format("woff2"), 
+       url("/Proxima Nova Font.woff") format("woff"), 
+       url("/Proxima Nova Font.otf") format("opentype"); /* Specify the correct format */
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+/* Apply to all elements */
 * {
-  font-family: "Questrial-Regular", sans-serif;
+  font-family: "Proxima Nova Rg", sans-serif;
 }
 
+  
 .info {
   position: absolute;
   bottom: 0;
