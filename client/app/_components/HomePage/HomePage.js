@@ -111,11 +111,17 @@ const HomePage = () => {
           </div>
 
           <div class="flex items-center justify-center">
-            {/* <div class="flex-grow border-t border-red-800"></div> */}
-            <h1 className="px-6  bg-[#c80f2e] py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 hover:scale-105 animate-fade-in" style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }}>
-            Top Hot Deals
-            </h1>
-            {/* <div class="flex-grow border-t border-red-800"></div> */}
+            <div class="flex-grow border-t border-[#c80f2e]"></div>
+            <h1
+  className="px-8 bg-[#c80f2e] py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 animate-fade-in"
+  style={{
+    clipPath: 'polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%)',
+  }}
+>
+  Top Hot Deals
+</h1>
+
+            <div class="flex-grow border-t border-[#c80f2e]"></div>
          
           </div>
              

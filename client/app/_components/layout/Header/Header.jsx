@@ -3,18 +3,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { FaBagShopping } from "react-icons/fa6";
-import { FaUser } from "react-icons/fa6";
-import { CiShoppingCart, CiUser } from "react-icons/ci";
-import { PiBagLight } from "react-icons/pi";
+
+import { CiShoppingCart} from "react-icons/ci";
+
 import { RiRefreshFill } from "react-icons/ri";
-import logo from "../../../_assets/images/image.png";
+import logo from "../../../_assets/images/image2.png";
+// import logo from "../../../_assets/images/image.png";
 import { categoryEnum } from "@/app/utils/utils";
 import { useAppSelector } from "@/app/lib/hooks";
 import { SiWhatsapp } from "react-icons/si";
 import { GoPerson } from "react-icons/go";
 import { useRouter } from "next/navigation";
-import { MdOutlineShoppingBasket } from "react-icons/md";
+
 
 const Header = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -38,17 +38,18 @@ const Header = () => {
   }
 
   return (
-    <div className="bg-white z-10 shadow-lg fixed top-0 left-0 w-full ">
-      <div className="flex justify-between items-center px-5 py-1 ">
+    <div className="bg-white z-10 fixed top-0 left-0 w-full ">
+      <div className="flex bg-[#DE1718] justify-between items-center px-0 md:px-5 py-1 ">
         <Link href="/" className="flex justify-center">
-          <Image src={logo} className="bg-white md:w-32 h-full w-10" alt="logo" />
+          <Image src={logo} className=" bg-white  md:w-full md:h-12 h-10 w-full " alt="logo" />
+
         </Link>
         <ul className=" flex gap-2 items-center">
           {isUserLoggedIn ? (
             <Link href="/profile?tab=1">
               <p className="flex items-center gap-2 text-green-950">
-                <GoPerson className="md:h-8 md:w-8 w-6 h-6 text-[#c80f2e] cursor-pointer" />
-                <span className="text-[#c80f2e] text-sm md:text-lg font-semibold tracking-wide">
+                <GoPerson className="md:h-8 md:w-8 w-6 h-6 text-white cursor-pointer" />
+                <span className="text-white text-sm md:text-lg font-semibold tracking-wide">
                   {userData?.firstName[0]}.{userData?.lastName}
                 </span>
               </p>
@@ -59,29 +60,29 @@ const Header = () => {
 
               <GoPerson
                 onClick={() => router.push("/login")}
-                className="md:h-8 md:w-8 w-6 h-6 text-[#c80f2e] cursor-pointer"
+                className="md:h-8 md:w-8 w-6 h-6 text-white cursor-pointer"
               />
             </li>
           )}
           <Link
             href="/order/cart"
-            className="flex gap-2 items-center text-base md:text-lg"
+            className="flex gap-2  items-center text-base md:text-lg"
           >
-            <CiShoppingCart  className="text-[#c80f2e] md:h-8 md:w-8 w-5 h-5" />
-            <span className="border border-[#c80f2e] text-sm md:text-lg text-[#c80f2e] rounded-full px-[8px] md:px-[10px] py-[1px] mx-2">
+            <CiShoppingCart size={45}  className="text-white" />
+            <span className="absolute  text-sm md:text-lg text-white px-[12.5px] md:px-[12.5px] py-[1px] mx-2">
               {cart?.length}
             </span>
-            <span className="text-[#c80f2e] font-semibold">
+            <span className="text-white font-semibold">
               <span className="text-sm md:text-lg">£ </span>
               {totalPrice?.toFixed(2)}
             </span>
           </Link>
         </ul>
       </div>
-
-      <div className=" bg-[#08579c] sm:justify-center flex lg:pt-0 items-center gap-5 justify-between px-5 flex-nowrap overflow-x-auto no-scrollbar  text-base sm:text-lg text-white font-semibold xl:gap-10">
+<div className="flex justify-center">
+      <div className=" bg-[#08579c]  md:rounded-b-lg w-fit sm:justify-center flex lg:pt-0 items-center gap-5 justify-between px-5 flex-nowrap overflow-x-auto no-scrollbar  text-base sm:text-lg text-white font-semibold xl:gap-10">
         <div
-          className={`py-2 px-1 lg:px-5 lg:h-[56px] flex items-center text-white transition duration-300 font-bold ${
+          className={`py-2 px-1 lg:px-5 lg:h-[56px] cursor-pointer flex items-center text-white transition duration-300 font-bold ${
             selectedItem === -1
               ? "bg-[#c80f2e] text-white hover:text-white"
               : " hover:text-[#c80f2e]"
@@ -97,7 +98,7 @@ const Header = () => {
           categoryEnum.map((data, idx) => (
             <div
               key={idx}
-              className={`px-1 lg:px-5 py-2 lg:h-[56px] flex items-center text-white transition duration-300 font-bold ${
+              className={`px-1 lg:px-5 py-2 cursor-pointer lg:h-[56px] flex items-center text-white transition duration-300 font-bold ${
                 selectedItem === idx
                   ? "bg-[#c80f2e] text-white hover:text-white"
                   : "  hover:text-[#c80f2e]"
@@ -111,6 +112,7 @@ const Header = () => {
               {data.slice(1).toLowerCase()}
             </div>
           ))}
+      </div>
       </div>
       <div className="hidden w-full md:flex  right-0 md:justify-end gap-[2px] md:gap-1 p-2 md:p-0 bottom-20  fixed ">
   <a
@@ -156,7 +158,7 @@ const Header = () => {
     href="https://wa.me/+447469367116"
     target="_blank"
     rel="noopener noreferrer"
-    className="w-full border-r border-r-white justify-center inline-flex items-center bg-[#08579c]  text-white py-2 px-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-white hover:text-[#c80f2e]"
+    className="w-full border-r border-r-white justify-center inline-flex items-center bg-green-600 text-white py-2 px-4 shadow-[0_3px_10px_rgb(0,0,0,0.2)] hover:bg-white hover:text-[#c80f2e]"
   >
     <SiWhatsapp size={22} />
     <span className="pl-2 text-sm">Whatsapp</span>
