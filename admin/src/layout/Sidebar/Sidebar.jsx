@@ -106,7 +106,7 @@ export default function Sidebar({ isSideNavOpen, setIsSideNavOpen }) {
         <aside
           id="nav-menu-4"
           aria-label="Side navigation"
-          className={` top-0 bottom-0 left-0 lg:static  z-40 flex w-72 flex-col  font-medium bg-red-800 transition-transform lg:translate-x-0 ${isSideNavOpen ? "translate-x-0" : " -translate-x-full"
+          className={` top-0 bottom-0 left-0 lg:static  z-40 flex w-72 flex-col  font-medium bg-[#08579c] transition-transform lg:translate-x-0 ${isSideNavOpen ? "translate-x-0" : " -translate-x-full"
             }`}
         >
           <div className=" items-center border-b   ">
@@ -156,7 +156,7 @@ export default function Sidebar({ isSideNavOpen, setIsSideNavOpen }) {
                     <li className="px-3 cursor-pointer" key={index}>
                       <Link
                         to={item?.path}
-                        className="flex items-center gap-3 rounded p-3  transition-colors hover:bg-red-700 hover:font-bold focus:text-black  text-white focus:font-bold  aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
+                        className="flex items-center gap-3 rounded p-3  transition-colors hover:bg-blue-500 hover:font-bold focus:text-black  text-white focus:font-bold  aria-[current=page]:bg-emerald-50 aria-[current=page]:text-emerald-500 "
                       >
                         <div className="flex items-center self-center">
                           {item?.icon}
@@ -171,7 +171,7 @@ export default function Sidebar({ isSideNavOpen, setIsSideNavOpen }) {
               </ul>
             </div>
             <div>
-              <ul className="flex flex-1 flex-col gap-1 py-3">
+              <ul className="flex hover:bg-[#DD1718]  flex-1 flex-col gap-1 py-3">
                 <li className="px-3">
                   <a
                     href="#"
