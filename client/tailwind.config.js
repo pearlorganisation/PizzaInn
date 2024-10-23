@@ -13,9 +13,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        Raleway: ["var(--font-raleway)"],
+        agdasima: ['"Agdasima"', 'sans-serif'], // Add the Google Font here
+        raleway: ['"Raleway"', 'sans-serif'],   // Assuming you meant to use this as well
+      },
+
+      clipPath: {
+        'polygon': 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
       },
     },
   },
-  plugins: [],
+    plugins: [
+    require('tailwind-clip-path'), // Make sure to install tailwind-clip-path
+  ],
 };

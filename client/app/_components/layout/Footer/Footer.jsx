@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="flex  md:gap-5 gap-2 justify-center md:justify-start  items-center md:px-5 py-5 w-full  md:text-xl  md:border-none border-b border-b-neutral-300">
           <p className="hover:hover:text-yellow-500">
             <a href="/menu/deals">
-              Deals <sup className="">*</sup>
+              Deals <sup className=""></sup>
             </a>
           </p>
           <p className="hover:text-yellow-500">
