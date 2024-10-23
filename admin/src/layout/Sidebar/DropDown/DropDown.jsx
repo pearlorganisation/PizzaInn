@@ -32,7 +32,7 @@ const DropDown = ({ sideBarOption }) => {
           <div className="m-2 flex  border-r-green-400 justify-end items-center">
             <div
               id="dropdownDivider"
-              class="z-10  bg-red-600 divide-y divide-gray-100 rounded-lg shadow w-full "
+              class="z-10  bg-[#DD1718] divide-y divide-gray-100 rounded-lg shadow w-full "
             >
               <ul
                 class="py-2 text-sm font-bold text-white "
