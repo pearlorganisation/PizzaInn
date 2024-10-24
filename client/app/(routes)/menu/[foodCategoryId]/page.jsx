@@ -8,28 +8,28 @@ export async function generateMetadata({ params }) {
   
   switch (category.toLowerCase()) {
     case "pizzas":
-      title = "Pizzas | Hot House Pizza | Order online now";
-      description = "Order delicious pizzas from Hot House Pizza in Northwood. Try our wide variety of pizzas and enjoy unbeatable taste.";
+      title = "Pizzas | The Pizza Inn | Order online now";
+      description = "Order delicious pizzas from The Pizza Inn. Try our wide variety of pizzas and enjoy unbeatable taste.";
       break;
     case "sides":
-      title = "Sides | Hot House Pizza | Order online now";
-      description = "Complement your meal with a wide range of sides from Hot House Pizza in Northwood. Order online now!";
+      title = "Sides | The Pizza Inn | Order online now";
+      description = "Complement your meal with a wide range of sides from The Pizza Inn. Order online now!";
       break;
     case "drinks":
-      title = "Drinks | Hot House Pizza | Order online now";
-      description = "Quench your thirst with our refreshing drinks at Hot House Pizza in Northwood. Order online!";
+      title = "Drinks | The Pizza Inn | Order online now";
+      description = "Quench your thirst with our refreshing drinks at The Pizza Inn. Order online!";
       break;
     case "desserts":
-      title = "Desserts | Hot House Pizza | Order online now";
-      description = "Indulge in our mouth-watering desserts at Hot House Pizza in Northwood. Order now!";
+      title = "Desserts | The Pizza Inn | Order online now";
+      description = "Indulge in our mouth-watering desserts at The Pizza Inn. Order now!";
       break;
     case "dips":
-      title = "Dips | Hot House Pizza | Order online now";
-      description = "Add extra flavor with our delicious dips from Hot House Pizza in Northwood. Order online now!";
+      title = "Dips | The Pizza Inn | Order online now";
+      description = "Add extra flavor with our delicious dips from The Pizza Inn. Order online now!";
       break;
     default:
-      title = "Food Category | Hot House Pizza | Order online now";
-      description = "Discover the best pizza takeaway in Northwood at Hot House Pizza. Order now!";
+      title = "Food Category | The Pizza Inn | Order online now";
+      description = "Discover the best pizza takeaway at The Pizza Inn. Order now!";
       break;
   }
 

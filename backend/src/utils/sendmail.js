@@ -36,7 +36,7 @@ export const sendMail = async (email, otp) => {
   let mailOptions = {
     from: process.env.NODEMAILER_EMAIL,
     to: email,
-    subject: "OTP - Hot House Pizza Northwood",
+    subject: "OTP - The Pizza Inn Northwood",
     html: data,
   };
 
