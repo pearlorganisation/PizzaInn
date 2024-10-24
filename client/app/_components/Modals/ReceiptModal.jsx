@@ -74,7 +74,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
           </button>
           <div className="max-[100vh] h-full  md:h-[70vh] w-full overflow-auto bg-white ">
             <div className="text-center">
-              <h1 className="text-3xl pt-10 md:pt-0 text-red-800 font-bold">HOT HOUSE PIZZA </h1>
+              <h1 className="text-3xl pt-10 md:pt-0 text-red-800 font-bold">The Pizza Inn </h1>
               <p>Order at {formattedDate}</p>
               <p>{orderData?.orderAt}</p>
               <h2 className="text-xl font-semibold my-5">
@@ -167,7 +167,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
               </h1>
             </div>
             <p className="my-2 text-sm px-2 mb-3">
-              Thank you for choosing HOT HOUSE PIZZA
+              Thank you for choosing The Pizza Inn
             </p>
           </div>
         </div>

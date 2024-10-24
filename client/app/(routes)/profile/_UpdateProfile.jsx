@@ -121,7 +121,7 @@ const UpdateProfile = () => {
           </label>
         </div> */}
         <p className="text-sm text-gray-600">
-          Hot House Pizza's does not sell, trade or rent your personal information to
+         The Pizza Inn does not sell, trade or rent your personal information to
           others. Any data collected will be used solely for the purpose of
           providing the services you request, communicating information about
           our brands, products and services and internal analysis.
