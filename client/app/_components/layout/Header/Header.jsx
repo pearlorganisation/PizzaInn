@@ -166,14 +166,14 @@ const Header = () => {
       )}
       </div>
       </div>
-      <div className="hidden w-full md:flex  right-0 md:justify-end gap-[2px] md:gap-1 p-2 md:p-0 bottom-20  fixed ">
+      <div className="hidden w-full md:flex  right-0  gap-[2px] md:gap-1 p-2 md:p-0 bottom-20  fixed ">
   <a
     href="https://wa.me/+447469367116"
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center text-white py-2 px-4 text-base rounded-b-md"
   >
-   <div className="fixed bottom-0 left-0 right-0 flex gap-5 justify-end p-4 ">
+   <div className="fixed bottom-0 left-0 right-0 w-fit p-4 ">
   <div className="relative  inline-flex items-center ">
     <SiWhatsapp 
       className='bg-[#32D851] text-white p-2 rounded-lg shadow-lg transition duration-300 cursor-pointer group-hover:bg-white-600'
