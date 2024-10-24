@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/layout/Header/Header";
 import Footer from "./_components/layout/Footer/Footer";
@@ -6,11 +5,11 @@ import StoreProvider from "./StoreProvider";
 import { Toaster } from "sonner";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Hot House pizza | Best Pizza in Northwood | Order online now',
-  description: 'Discover the best pizza takeaway in Northwood at Hot House Pizza, Convenient online ordering, quick service, and unbeatable taste. Order now',
+  title: 'The Pizza Inn | Order online now',
+  description: 'Discover the best pizza , Convenient online ordering, quick service, and unbeatable taste. Order now',
 }
 
 
@@ -84,7 +83,7 @@ export default function RootLayout({ children }) {
   `}
 </Script>
 
-      <body className={inter.className}>
+      <body >
         <StoreProvider>
           <Header />
           <div className="pt-36">{children}</div>
