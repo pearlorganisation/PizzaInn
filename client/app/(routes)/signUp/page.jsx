@@ -238,7 +238,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               <label htmlFor="terms" className="text-gray-700">
-                I accept the Hot House Pizza{" "}
+                I accept the Pizza Inn{" "}
                 <a href="/termsAndConditions" className="text-[#c80f2e] hover:text-[#c80f2e] underline">
                   Terms & Conditions.
                 </a>{" "}

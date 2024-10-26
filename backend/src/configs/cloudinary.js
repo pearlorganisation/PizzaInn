@@ -21,6 +21,9 @@ cloudinary.config({
 // Setting up the storage with Cloudinary
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
+  params: {
+    folder: 'Angliano HotHouse 2.0' // Specify the folder destination here
+  },
 });
 
 // Creating the multer upload instance

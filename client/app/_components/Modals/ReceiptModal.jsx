@@ -167,7 +167,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
               </h1>
             </div>
             <p className="my-2 text-sm px-2 mb-3">
-              Thank you for choosing HOT HOUSE PIZZA
+              Thank you for choosing The Pizza Inn
             </p>
           </div>
         </div>

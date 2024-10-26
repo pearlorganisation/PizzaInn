@@ -8,10 +8,6 @@ import "swiper/css/pagination";
 import React, { useEffect, useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import pizza2 from "../../_assets/images/pizza1.jpg"
-import pizza1 from "../../_assets/images/pizza2.jpeg"
-import pizza3 from "../../_assets/images/pizza3.webp"
-import pizza4 from "../../_assets/images/pizza4.webp"
 import Image from "next/image";
 import DealsCards from "../Pages/DealsCards";
 import { ClockLoader } from "react-spinners";
@@ -41,14 +37,7 @@ async function getBanners(){
 }
 
 const HomePage = () => {
-  
-
-  const img = [
-    pizza1,
-    pizza2,
-    pizza3,
-    pizza4
-  ];
+ 
   const dispatch = useDispatch()
   
     const [popularDealData, setPopularDealData] = useState(null);
@@ -110,11 +99,18 @@ const HomePage = () => {
             {/* <div class="flex-grow border-t border-red-800"></div> */}
           </div>
 
-          <div className="flex items-center justify-center">
-            {/* <div class="flex-grow border-t border-red-800"></div> */}
-            <h1 className="px-8 bg-[#c80f2e] py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 animate-fade-in" style={{ clipPath: 'polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%)' }}
-            >Top Hot Deals</h1>
-            {/* <div class="flex-grow border-t border-red-800"></div> */}
+          <div class="flex items-center justify-center">
+            <div class="flex-grow border-t border-[#c80f2e]"></div>
+            <h1
+  className="px-8 bg-[#c80f2e] py-6 text-white rounded-lg text-base sm:text-xl md:text-2xl lg:text-3xl transition-transform duration-500 ease-in-out transform scale-100 animate-fade-in"
+  style={{
+    clipPath: 'polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%)',
+  }}
+>
+  Top Hot Deals
+</h1>
+
+            <div class="flex-grow border-t border-[#c80f2e]"></div>
          
           </div>
                        {/* <div class="flex-grow border -t border-red-800"></div> */}

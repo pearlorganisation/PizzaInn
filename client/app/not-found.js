@@ -1,8 +1,8 @@
 import Link from "next/link"
 
 export const metadata = {
-  title: 'Not Found | Hot House Northwood',
-  description: 'Discover the best pizza takeaway in Northwood at Hot House Pizza, Convenient online ordering, quick service, and unbeatable taste. Order now',
+  title: 'Not Found | The Pizza Inn',
+  description: 'Discover the best pizza , Convenient online ordering, quick service, and unbeatable taste. Order now',
 }
 
 const page = () => {
