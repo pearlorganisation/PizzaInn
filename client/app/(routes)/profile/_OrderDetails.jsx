@@ -58,12 +58,12 @@ const OrderDetails = () => {
               <div className="md:flex gap-3  justify-between">
                 <h1 className="">
                  <div className="flex justify-between">
-                   <span className="text-xl capitalize bg-red-800 rounded-t-md px-1 py-1 text-white">{`${data?.orderType}`}
+                   <span className="text-xl capitalize bg-[#c80f2e] rounded-t-md px-1 py-1 text-white">{`${data?.orderType}`}
                     </span>   
                     <a
                     href="/order/cart"
                     onClick={() => handleReorderData(data?.items)}
-                    className="md:hidden px-1 py-1  text-red-800 font-semibold rounded-md shadow-lg flex items-center"
+                    className="md:hidden px-1 py-1  text-[#c80f2e] font-semibold rounded-md shadow-lg flex items-center"
                   >
                     Reorder Now
                   </a>
@@ -95,12 +95,12 @@ const OrderDetails = () => {
                   <a
                     href="/order/cart"
                     onClick={() => handleReorderData(data?.items)}
-                    className="hidden p-3 bg-red-800 hover:bg-red-700 rounded-md text-white md:flex items-center"
+                    className="hidden p-3 bg-[#c80f2e] hover:bg-[#c80f2e] rounded-md text-white md:flex items-center"
                   >
                     Reorder Now
                   </a>
                   <button
-                    className="p-2 md:p-3  text-red-800 hover:text-red-700  rounded-md shadow-lg flex items-center"
+                    className="p-2 md:p-3  text-[#c80f2e] hover:text-[#c80f2e] rounded-md shadow-lg flex items-center"
                     onClick={() => {
                       dispatch(getSelectedReceipt(data));
                       setIsReceiptVisible(true);

@@ -52,7 +52,7 @@ const Pizzas = () => {
 
   if (error || filterError) {
     return (
-      <div className="h-screen text-red-800 text-center text-3xl md:text-5xl font-bold">
+      <div className="h-screen text-[#c80f2e] text-center text-3xl md:text-5xl font-bold">
         Sorry, Failed to load...
       </div>
     );
@@ -97,19 +97,19 @@ const Pizzas = () => {
                           selectedData: data?.data[0]?.priceSection[0]?.size?._id,
                         })
                       );}
-            }  href={"product/customisePizza?calledBy=createYourOwnPizza"} className="cursor-pointer bg-red-800 hover:bg-red-700 px-3 py-2 text-white rounded-md">
+            }  href={"product/customisePizza?calledBy=createYourOwnPizza"} className="cursor-pointer bg-[#c80f2e] hover:bg-[#c80f2e] px-3 py-2 text-white rounded-md">
               Create Your Own Pizza
             </Link>
-            <Link href={"halfAndHalfPizza?calledBy=half"} className="bg-green-800 px-3 py-2 text-white rounded-md">
+            <Link href={"halfAndHalfPizza?calledBy=half"} className="bg-[#08579c] px-3 py-2 text-white rounded-md">
               Half & Half Pizza
             </Link>
           </div>
           <div className="w-[50%] ps-2 md:hidden space-y-5">
             {" "}
-            <Link href={"product/customisePizza?calledBy=createYourOwnPizza"} className="bg-red-800 px-3 py-2 text-white rounded-md">
+            <Link href={"product/customisePizza?calledBy=createYourOwnPizza"} className="bg-[#c80f2e] px-3 py-2 text-white rounded-md">
               Create Your Own Pizza
             </Link>
-            <Link href={"halfAndHalfPizza?calledBy=half"} className="bg-green-800 px-3 py-2 text-white rounded-md">
+            <Link href={"halfAndHalfPizza?calledBy=half"} className="bg-blue-800 px-3 py-2 text-white rounded-md">
               Half & Half Pizza
             </Link>
           </div>
@@ -134,7 +134,7 @@ const Pizzas = () => {
       </div>
       <div className="container mx-auto">
         {!hasMatchingPizzas ? (
-          <div className="text-center text-red-800 h-[80vh] pt-[25vh] font-bold text-3xl">
+          <div className="text-center text-[#c80f2e] h-[80vh] pt-[25vh] font-bold text-3xl">
             Sorry, No Pizza found
           </div>
         ) : (
@@ -150,11 +150,11 @@ const Pizzas = () => {
               <React.Fragment key={category}>
                 {isCategoryMatched && (
                   <div className="flex items-center justify-center mb-2 p-5">
-                        <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-red-800"} `}></div>
-                    <h1 className={`px-4 ${category === "VEGETARIAN" || category === "Vegetarian" ? "text-green-800": "text-red-800"}  font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl`}>
+                        <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
+                    <h1 className={`px-4 ${category === "VEGETARIAN" || category === "Vegetarian" ? "text-green-800": "text-[#c80f2e]"}  font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl`}>
                       {category}
                     </h1>
-                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-red-800"} `}></div>
+                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
                   </div>
                 )}
 

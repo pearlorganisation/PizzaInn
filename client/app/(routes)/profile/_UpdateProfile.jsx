@@ -73,10 +73,10 @@ const UpdateProfile = () => {
                 type="text"
                 {...register("firstName", { required: true })}
                 id="first-name"
-                className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+                className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
                 placeholder="Enter Your First Name"
               />
-              {errors.firstName && <span className="text-red-500">This field is required</span>}
+              {errors.firstName && <span className="text-[#c80f2e]">This field is required</span>}
               {/* <CheckIcon className="absolute top-1/2 right-3 transform -translate-y-1/2 text-red-800" /> */}
             </div>
           </div>
@@ -89,10 +89,10 @@ const UpdateProfile = () => {
                 {...register("lastName", { required: true })}
                 type="text"
                 id="last-name"
-                className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+                className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
                 placeholder="Enter Your Last Name"
               />
-              {errors.lastName && <span className="text-red-500">This field is required</span>}
+              {errors.lastName && <span className="text-[#c80f2e]">This field is required</span>}
               {/* <CheckIcon className="absolute top-1/2 right-3 transform -translate-y-1/2 text-red-800" /> */}
             </div>
           </div>
@@ -106,10 +106,10 @@ const UpdateProfile = () => {
               type="Number"
               {...register("mobileNumber", { required: true })}
               id="mobile"
-              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
               placeholder="Enter Mobile Number"
             />
-            {errors.mobileNumber && <span className="text-red-500">This field is required</span>}
+            {errors.mobileNumber && <span className="text-[#c80f2e]">This field is required</span>}
             {/* <CheckIcon className="absolute top-1/2 right-3 transform -translate-y-1/2 text-red-800" /> */}
           </div>
         </div>
@@ -128,7 +128,7 @@ const UpdateProfile = () => {
         </p>
         <button
           type="submit"
-          className="w-full py-3 bg-red-800 text-white rounded-md hover:bg-red-700"
+          className="w-full py-3 bg-[#c80f2e] text-white rounded-md hover:bg-[#c80f2e]"
         >
           {loading ? <div>Loading...</div> : "Save & continue"}
         </button>

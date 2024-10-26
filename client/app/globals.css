@@ -14,8 +14,7 @@
 
 @font-face {
   font-family: "Proxima Nova Rg";
-  src: url("/Proxima Nova Font.woff2") format("woff2"), 
-       url("/Proxima Nova Font.woff") format("woff"), 
+  src: 
        url("/Proxima Nova Font.otf") format("opentype"); /* Specify the correct format */
   font-weight: normal;
   font-style: normal;

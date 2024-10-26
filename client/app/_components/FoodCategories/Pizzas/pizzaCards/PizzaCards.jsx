@@ -6,6 +6,7 @@ import Link from "next/link";
 import AddedToCartModel from "@/app/_components/Modals/AddedToCartModel";
 import { getCustomizationDetails } from "@/app/lib/features/orderDetails/orderDetailsslice";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
+import { VscActivateBreakpoints } from "react-icons/vsc";
 
 const PizzaCards = ({ data, idx }) => {
   const dispatch = useDispatch();
@@ -68,15 +69,15 @@ const PizzaCards = ({ data, idx }) => {
           className={` rounded-md  w-6 h-6 border-2 flex justify-center items-center bg-white ${
             data?.filter?._id === "666941b94af3128843e747bb"
               ? "border-green-600 "
-              : "border-red-800"
+              : "border-[#c80f2e]"
           }`}
         >
-          <RiCheckboxBlankCircleFill
+          <VscActivateBreakpoints
             size={20}
             className={`${
               data?.filter?.filter === "Vegetarian"
                 ? "text-green-600 "
-                : "text-red-800"
+                : "text-[#c80f2e]"
             }`}
           />
         </div>
@@ -135,7 +136,7 @@ const PizzaCards = ({ data, idx }) => {
             }}
             href={`/menu/product/customisePizza`}
           >
-            <TbEdit size={30} className="text-slate-800 hover:text-red-800" />
+            <TbEdit size={30} className="text-slate-800 hover:text-[#c80f2e]" />
           </Link>
           <div className="bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center w-full">
             <button

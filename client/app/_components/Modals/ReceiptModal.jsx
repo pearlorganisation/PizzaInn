@@ -52,7 +52,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
           <button
             type="button"
             onClick={() => setIsReceiptVisible(false)}
-            class="absolute top-3 end-2.5  bg-red-800 text-white md:text-black md:bg-transparent hover:bg-red-800 hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            class="absolute top-3 end-2.5  bg-[#c80f2e] text-white md:text-black md:bg-transparent hover:bg-[#c80f2e] hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
             data-modal-hide="popup-modal"
           >
             <svg
@@ -74,7 +74,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
           </button>
           <div className="max-[100vh] h-full  md:h-[70vh] w-full overflow-auto bg-white ">
             <div className="text-center">
-              <h1 className="text-3xl pt-10 md:pt-0 text-red-800 font-bold">HOT HOUSE PIZZA </h1>
+              <h1 className="text-3xl pt-10 md:pt-0 text-[#c80f2e] font-bold">HOT HOUSE PIZZA </h1>
               <p>Order at {formattedDate}</p>
               <p>{orderData?.orderAt}</p>
               <h2 className="text-xl font-semibold my-5">
@@ -125,7 +125,7 @@ const ReceiptModal = ({ isReceiptVisible, setIsReceiptVisible }) => {
                           <p className=" font-semibold">
                             {data?.name}{" "}
                             {size ? `(${price[0]})` : (data?.dealsData ? `(${data?.size})` : data?.allToppings?.size?.name ? `(${data?.allToppings?.size?.name})` : "" ) }
-                              {data?.allToppings && <span className="text-sm bg-red-800 text-white rounded-md px-2"> Customized </span>}
+                              {data?.allToppings && <span className="text-sm bg-[#c80f2e] text-white rounded-md px-2"> Customized </span>}
                           </p>
                         </div>
 

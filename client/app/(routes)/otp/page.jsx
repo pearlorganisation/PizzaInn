@@ -168,7 +168,7 @@ const OTPReceiver = () => {
     <div className="flex items-center justify-center  px-4 pt-10 pb-20  mx-auto ">
       <div className="max-w-md w-full bg-white shadow-md rounded-lg p-8">
    
-        <h2 className="text-2xl font-bold text-center text-red-800 mb-4">
+        <h2 className="text-2xl font-bold text-center text-[#c80f2e] mb-4">
           Enter OTP 
         </h2>
         <p className="text-center text-gray-600 mb-8">
@@ -184,18 +184,18 @@ const OTPReceiver = () => {
               className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-transparent text-center text-xl tracking-widest"
               placeholder="------"
             />
-            {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
+            {error && <p className="text-[#c80f2e] text-sm mt-2">{error}</p>}
           </div>
           <button
             type="submit"
-            className="w-full bg-red-800 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300"
+            className="w-full bg-[#c80f2e] hover:bg-[#c80f2e] text-white font-bold py-2 px-4 rounded-lg transition duration-300"
           >
             {isLoading ? <ClipLoader color=""/>: "Verify OTP" } 
           </button>
         </form>
         <div className="mt-4 text-center">
           <p className="text-gray-600">Didn't receive the code?</p>
-          <button onClick={handleResendOtp} className="hover:underline mt-2 text-red-800 hover:text-red-700">Resend OTP</button>
+          <button onClick={handleResendOtp} className="hover:underline mt-2 text-[#c80f2e] hover:text[#c80f2e]">Resend OTP</button>
         </div>
       </div>
     </div>

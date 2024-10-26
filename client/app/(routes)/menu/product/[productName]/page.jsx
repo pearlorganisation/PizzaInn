@@ -252,7 +252,7 @@ const Product = () => {
                         <>
                           {" "}
                           {base?.price[0]?.price > 0 && (
-                            <span className="bg-red-800 text-white rounded-lg px-1">
+                            <span className="bg-[#c80f2e] text-white rounded-lg px-1">
                               + £ {base?.price[0]?.price}
                             </span>
                           )}

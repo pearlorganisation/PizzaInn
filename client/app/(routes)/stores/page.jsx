@@ -51,7 +51,7 @@ const Stores = () => {
       <div className="border    flex flex-wrap w-full">
         {storesData?.map((data) => {
           return (
-            <div className="hover:bg-red-600 w-[50%] hover:text-white mt-2 p-2 cursor-pointer">
+            <div className="hover:bg-[#c80f2e] w-[50%] hover:text-white mt-2 p-2 cursor-pointer">
               <h1 className="font-bold text-xl hover:text-white">
                 {data?.name}
               </h1>

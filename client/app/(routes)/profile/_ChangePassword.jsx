@@ -66,7 +66,7 @@ const ChangePassword = () => {
     <main className="w-full md:w-3/4 bg-white p-8 rounded-md shadow-md">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
         {response && response?.status == false ? (
-          <div className="p-2 text-center text-red-800 font-semibold">
+          <div className="p-2 text-center text-[#c80f2e] font-semibold">
             {response?.message}!
           </div>
         ) : (
@@ -81,7 +81,7 @@ const ChangePassword = () => {
               {...register("currentPassword", { required: true })}
               type="text"
               id="mobile"
-              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
               placeholder="Current Password"
             />
             {errors.currentPassword && <span>This field is required</span>}
@@ -97,7 +97,7 @@ const ChangePassword = () => {
               {...register("newPassword", { required: true })}
               type="text"
               id="newPassword"
-              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
               placeholder="New Password"
             />
             {errors.newPassword && <span>This field is required</span>}
@@ -113,7 +113,7 @@ const ChangePassword = () => {
               {...register("confirmPassword", { required: true })}
               type="text"
               id="confirmPassword"
-              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-red-800"
+              className="w-full p-2 border  rounded-md focus:outline-none focus:ring-2 focus:ring-[#c80f2e]"
               placeholder="Confirm Password"
             />
             {errors.confirmPassword && <span>This field is required</span>}
@@ -123,7 +123,7 @@ const ChangePassword = () => {
 
         <button
           type="submit"
-          className="w-full py-3 bg-red-800 text-white rounded-md hover:bg-red-800"
+          className="w-full py-3 bg-[#c80f2e] text-white rounded-md hover:bg-[#c80f2e]"
         >
             {isLoading ? <ClipLoader color=""/>: "Save & continue" } 
         </button>

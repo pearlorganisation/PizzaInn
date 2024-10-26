@@ -45,7 +45,7 @@ const Sides = () => {
 
   if (error || filterError) {
     return (
-      <div className="h-screen text-red-800 text-center text-3xl md:text-5xl font-bold">
+      <div className="h-screen text-[#c80f2e] text-center text-3xl md:text-5xl font-bold">
         Sorry, Failed to load...
       </div>
     );
@@ -89,7 +89,7 @@ const Sides = () => {
       </div>
       <div className="container mx-auto">
         {!hasMatchingSides ? (
-          <div className="text-center text-red-800 h-[80vh] pt-[25vh] font-bold text-3xl">
+          <div className="text-center text-[#c80f2e]h-[80vh] pt-[25vh] font-bold text-3xl">
              Sorry, No Sides found
           </div>
         ) : (
@@ -103,11 +103,11 @@ const Sides = () => {
               <React.Fragment key={category}>
                 {isCategoryMatched && (
                   <div className="flex items-center justify-center mb-2 p-5">
-                      <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-red-800"} `}></div>
-                      <h1 className={`px-4 ${category === "VEGETARIAN" || category === "Vegetarian" ? "text-green-800": "text-red-800"}  font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl`}>
+                      <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
+                      <h1 className={`px-4 ${category === "VEGETARIAN" || category === "Vegetarian" ? "text-green-800": "text-[#c80f2e]"}  font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl`}>
                       {category}
                     </h1>
-                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-red-800"} `}></div>
+                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
                   </div>
                 )}
 

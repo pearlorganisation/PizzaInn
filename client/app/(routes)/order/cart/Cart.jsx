@@ -32,7 +32,7 @@ const Cart = () => {
   return (
     <>
       <div className="max-w-7xl mx-auto bg-white shadow-md rounded-lg overflow-hidden my-4 mb-28">
-        <div className="bg-red-800 text-white text-center py-2">
+        <div className="bg-[#c80f2e] text-white text-center py-2">
           <h2 className="text-2xl font-bold">YOUR BASKET</h2>
         </div>
         {Array.isArray(cart) && cart?.length > 0 ? (
@@ -132,7 +132,7 @@ const Cart = () => {
                           : ""}
                         <br />
                         {data?.allToppings && (
-                          <span className="text-sm bg-red-800 text-white rounded-md px-2">
+                          <span className="text-sm bg-[#c80f2e] text-white rounded-md px-2">
                             {" "}
                             Customized{" "}
                           </span>
@@ -163,7 +163,7 @@ const Cart = () => {
                     onClick={() => {
                       dispatch(decreaseQuantity({ id: data?.id, quantity: 1 }));
                     }}
-                    className="bg-red-800 hover:bg-red-700 h-8 text-white font-extrabold text-lg px-2 rounded"
+                    className="bg-[#c80f2e] hover:bg-[#c80f2e] h-8 text-white font-extrabold text-lg px-2 rounded"
                   >
                     -
                   </button>
@@ -181,7 +181,7 @@ const Cart = () => {
                   </button>
 
                   <button
-                    className="bg-red-800 hover:bg-red-700 h-8 text-white px-2 rounded"
+                    className="bg-[#c80f2e] hover:bg-[#c80f2e] h-8 text-white px-2 rounded"
                     onClick={() => dispatch(deletefromCart({ id: data?.id }))}
                   >
                     <MdDelete size={20} />
@@ -198,7 +198,7 @@ const Cart = () => {
                             <div key={idx} className="flex ">
                               <div className="min-w-[10rem] max-w-[10rem] md:min-w-[30rem]">
                                 {item?.name}{" "}
-                                <span className="text-sm bg-red-800 text-white rounded-md px-2">
+                                <span className="text-sm bg-[#c80f2e] text-white rounded-md px-2">
                                   {" "}
                                   Customized{" "}
                                 </span>
