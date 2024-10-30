@@ -76,13 +76,13 @@ const Login = () => {
                 type="email"
                 id="login-email"
                 className={`w-full px-3 py-2 border ${
-                  errors.email ? "border-red-800" : "border-gray-300"
+                  errors.email ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your email"
                 {...register("email", { required: "Email is required" })}
               />
               {errors.email && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.email.message}
                 </p>
               )}
@@ -95,19 +95,19 @@ const Login = () => {
                 type="password"
                 id="login-password"
                 className={`w-full px-3 py-2 border ${
-                  errors.password ? "border-red-800" : "border-gray-300"
+                  errors.password ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your password"
                 {...register("password", { required: "Password is required" })}
               />
               {errors.password && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.password.message}
                 </p>
               )}
             </div>
             <div className="flex items-center justify-between mb-4">
-              <Link href="forget_password" className="text-red-800 font-semibold hover:text-red-700">
+              <Link href="forget_password" className="text-[#c80f2e] font-semibold hover:text-[#c80f2e]">
                 Forgot password?
               </Link>
               <button
@@ -120,7 +120,7 @@ const Login = () => {
             <p className="mt-4">
               Don't have an account ?{" "}
               <span>
-                <Link href="/signUp" className="text-red-900 hover:text-red-700 font-semibold">
+                <Link href="/signUp" className="text-[#c80f2e] hover:text-[#c80f2e] font-semibold">
                   Create here.
                 </Link>
               </span>

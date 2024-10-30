@@ -108,7 +108,7 @@ const BaseContainer = () => {
                         >
                           <RiEditCircleFill size={28} />
                         </button>
-                        <button className="bg-red-700 hover:bg-red-600 rounded-lg text-white px-2 py-1  object-cover">
+                        <button className="bg-[#c80f2e] hover:bg-[#c80f2e] rounded-lg text-white px-2 py-1  object-cover">
                           <MdDelete
                             size={28}
                             onClick={() => handleDeleteModal(item?._id)}

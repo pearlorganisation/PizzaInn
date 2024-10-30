@@ -223,7 +223,7 @@ if (totalPrice > 20){
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="max-w-7xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-center text-red-800 border-b-2 border-red-800 pb-2">
+            <h2 className="text-2xl font-bold text-center text-[#c80f2e] border-b-2 border-[#c80f2e] pb-2">
               ORDER SUMMARY
             </h2>
             <div className="border p-4 rounded-md">
@@ -254,7 +254,7 @@ if (totalPrice > 20){
                     {data?.name}
                     {" "}
                     {size ? `(${price[0]})` : (data?.dealsData ? `(${data?.size})` : data?.allToppings?.size?.name ? `(${data?.allToppings?.size?.name} 15)` : "" ) }
-                          {data?.allToppings && <>{" "}<span className="text-sm bg-red-800 text-white rounded-md px-2"> Customized </span></>}
+                          {data?.allToppings && <>{" "}<span className="text-sm bg-[#c80f2e] text-white rounded-md px-2"> Customized </span></>}
                     <br/>
                     {/* <p className="hidden md:block text-green-800">{mergedToppings}</p> */}
                     {data?.dealsData && ( <div className="text-sm text-gray-600"> {data?.dealsData?.map((item,idx) =>
@@ -300,7 +300,7 @@ if (totalPrice > 20){
             </div>
           </div>
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-center text-red-800 border-b-2 border-red-800 pb-2">
+            <h2 className="text-2xl font-bold text-center text-[#c80f2e] border-b-2 border-[#c80f2e] pb-2">
               ORDER DETAILS
             </h2>
             <div>
@@ -316,7 +316,7 @@ if (totalPrice > 20){
             {order?.orderType === 'delivery' && <div>
                 <h3 className="text-lg font-bold">YOUR ADDRESS & MOBILE NUMBER:</h3>
                 <p>
-                  {order?.address?.address} , <span className="text-red-800">{userData?.mobileNumber ? userData?.mobileNumber: "No Mobile Number is added"}</span>
+                  {order?.address?.address} , <span className="text-[#c80f2e]">{userData?.mobileNumber ? userData?.mobileNumber: "No Mobile Number is added"}</span>
 
                 </p>
               </div>
@@ -359,7 +359,7 @@ if (totalPrice > 20){
                 I accept the Terms & Conditions and Privacy Policy
               </label>
             </div>
-            { errors.terms &&  <p className="text-red-500">Please accept the terms & conditions.</p>}
+            { errors.terms &&  <p className="text-[#c80f2e]">Please accept the terms & conditions.</p>}
             <div className="flex space-x-4">
               <button
               type="button"

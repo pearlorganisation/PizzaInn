@@ -39,8 +39,8 @@ const Profile = ({ searchParams }) => {
                   href="/profile?tab=1"
                   className={`block p-2 ${
                     Number(tab) === 1
-                      ? "bg-red-800  text-white rounded-md"
-                      : "text-red-800"
+                      ? "bg-[#c80f2e] text-white rounded-md"
+                      : "text-[#c80f2e]"
                   }  `}
                 >
                   Update name / Mobile number
@@ -51,8 +51,8 @@ const Profile = ({ searchParams }) => {
                   href="/profile?tab=2"
                   className={`block p-2 ${
                     Number(tab) === 2
-                      ? "bg-red-800  text-white rounded"
-                      : "text-red-800"
+                      ? "bg-[#c80f2e]  text-white rounded"
+                      : "text-[#c80f2e]"
                   } hover:underline`}
                 >
                   Change your password
@@ -61,7 +61,7 @@ const Profile = ({ searchParams }) => {
               <li>
                 <button
                   onClick={handleDeleteAccount}
-                  className="block p-2 text-start text-red-800 hover:underline"
+                  className="block p-2 text-start text-[#c80f2e]hover:underline"
                 >
                   Delete my account
                 </button>
@@ -71,7 +71,7 @@ const Profile = ({ searchParams }) => {
                   onClick={() => {
                     dispatch(userLogout());
                   }}
-                  className="block p-2 text-red-800 hover:underline"
+                  className="block p-2 text-[#c80f2e] hover:underline"
                 >
                   Log Out
                 </button>
@@ -86,8 +86,8 @@ const Profile = ({ searchParams }) => {
                   href="/profile?tab=3"
                   className={`block p-2 ${
                     Number(tab) === 3
-                      ? "bg-red-800  text-white rounded"
-                      : "text-red-800"
+                      ? "bg-[#c80f2e] text-white rounded"
+                      : "text-[#c80f2e]"
                   } hover:underline`}
                 >
                   List all of your orders

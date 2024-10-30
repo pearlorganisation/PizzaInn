@@ -191,7 +191,7 @@ export default function DrinksCard({ data }) {
 
   return (
     <>
-      <div className="bg-white shadow-md rounded-md max-w-[15rem] w-full newshadow flex flex-col justify-between">
+      <div className="bg-white shadow-md rounded-md max-w-[15rem] w-full mb-10 newshadow flex flex-col justify-between">
         <img
           src={data.banner}
           alt="Card Image"

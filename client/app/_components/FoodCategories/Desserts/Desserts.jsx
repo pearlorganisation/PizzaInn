@@ -45,7 +45,7 @@ const Desserts = () => {
 
   if (error || filterError) {
     return (
-      <div className="h-screen text-red-800 text-center text-3xl md:text-5xl font-bold">
+      <div className="h-screen text-[#c80f2e] text-center text-3xl md:text-5xl font-bold">
         Sorry, Failed to load...
       </div>
     );
@@ -89,7 +89,7 @@ const Desserts = () => {
       </div>
       <div className="container mx-auto">
         {!hasMatchingDesserts ? (
-          <div className="text-center text-red-800 h-[80vh] pt-[25vh] font-bold text-3xl">
+          <div className="text-center text-[#c80f2e] h-[80vh] pt-[25vh] font-bold text-3xl">
             Sorry, No Dessert found
           </div>
         ) : (
@@ -103,11 +103,24 @@ const Desserts = () => {
               <React.Fragment key={category}>
                 {isCategoryMatched && (
                   <div className="flex items-center justify-center mb-2 p-5">
-                    <div className="flex-grow border-t border-red-800"></div>
-                    <h1 className="px-4 text-red-800 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
+                    {/* <div className="flex-grow border-t border-[#c80f2e] "></div>
+                    <h1 className="px-4 text-[#c80f2e] 0 font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl">
                       {category}
                     </h1>
-                    <div className="flex-grow border-t border-red-800"></div>
+                    <div className="flex-grow border-t border-[#c80f2e] "></div> */}
+                    <div
+  className="w-[400px] h-[90px] flex items-center justify-center font-bold text-black text-center text-xl" // Reduced size and font
+  style={{
+    background: "#c80f2e", 
+    // clipPath: "polygon(10% 30%, 87% 20%, 70% 50%, 89% 80%, 10% 80%, 30% 50%)", // Keep the same clipPath
+
+      // background: "#15803D", 
+      clipPath: "polygon(10% 20%, 80% 20%, 70% 50%, 80% 80%, 10% 80%, 20% 50%)",
+   overflow: "hidden", 
+    padding: "0px", }}
+>
+  <span className="text-white mr-10">{category}</span> {/* Removed ml-6 */}
+</div>
                   </div>
                 )}
 

@@ -94,7 +94,7 @@ const Header = () => {
             </Link>
             </>
           ) : (
-            <li className="px-2 py-1 font-semibold  text-white bg-[#08579c] rounded-lg flex items-center text-xs md:text-lg">
+            <li className="px-2 py-1 font-semibold  text-white bg-[#DE1718] rounded-lg flex items-center text-xs md:text-lg">
               <Link href="/login">Login / Signup</Link>
             </li>
           )}

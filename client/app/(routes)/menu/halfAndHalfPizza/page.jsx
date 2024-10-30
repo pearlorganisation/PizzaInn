@@ -228,7 +228,7 @@ const page = () => {
         {isTrue && 
           <div className="md:grid grid-cols-2  gap-8 md:p-10">
           <div className="pt-10 md:pt-0 md:p-2">
-            <p className="text-xl md:text-2xl text-red-800 font-bold ">Pizza First Half</p>
+            <p className="text-xl md:text-2xl text-[#c80f2e] font-bold ">Pizza First Half</p>
 
             <div className="grid grid-cols-[20%_auto] md:grid-cols-[10%_auto] pt-2 items-center">
               {
@@ -250,7 +250,7 @@ const page = () => {
                 >
                   <MdEditSquare
                     size={30}
-                    className="text-red-800 hover:text-red-700"
+                    className="text-[#c80f2e] hover:text-[#c80f2e]"
                   />
                 </button>
               }
@@ -273,7 +273,7 @@ const page = () => {
           </div>
          
           <div className="pt-5 md:pt-0 md:p-2">
-            <p className="text-xl md:text-2xl text-red-800 font-bold ">
+            <p className="text-xl md:text-2xl text-[#c80f2e] font-bold ">
               Pizza Second Half
             </p>
             <div className="grid grid-cols-[20%_auto] md:grid-cols-[10%_auto] pt-2  items-center">
@@ -293,7 +293,7 @@ const page = () => {
               >
                 <MdEditSquare
                   size={30}
-                  className="text-red-800 hover:text-red-700"
+                  className="text-[#c80f2e] hover:text-[#c80f2e]"
                 />
               </button>
               <div>

@@ -223,7 +223,7 @@ const Delivery = ({ step }) => {
                     <label htmlFor="address">Please Enter Your Postal Code</label>{" "}
                     <div className="relative">
                         <input
-                            className="border-2 border-gray-300 rounded-md px-4 py-2 outline-none w-full  focus:border-red-800"
+                            className="border-2 border-gray-300 rounded-md px-4 py-2 outline-none w-full  focus:border-[#c80f2e]"
                             type="text"
                             name="address"
                             id=""
@@ -300,7 +300,7 @@ const Delivery = ({ step }) => {
                                 </button>
                                 <button
                                     type="submit"
-                                    className="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
+                                    className="py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c80f2e]"
                                 >
                                     Save
                                 </button>
@@ -315,7 +315,7 @@ const Delivery = ({ step }) => {
                                         }} className="text-green-700 hover:text-green-800" />
                                         <MdDelete onClick={() => {
                                             deleteAddress(item?._id)
-                                        }} size={24} className="text-red-600 hover:text-red-700" /></div>
+                                        }} size={24} className="text-[#c80f2e] hover:text-[#c80f2e]" /></div>
                                     </div>
                                 })
                             }
@@ -324,7 +324,7 @@ const Delivery = ({ step }) => {
 
 
 
-                    {errors.address && <p className="text-red-500">Please fill the address</p>}
+                    {errors.address && <p className="text-[#c80f2e]">Please fill the address</p>}
                 </div>
 
                 <div className="space-y-2">
@@ -333,7 +333,7 @@ const Delivery = ({ step }) => {
                         {...register("daytime", { required: true })}
                         id="day"
                         defaultValue=""
-                        className="px-4 py-2 border-2 w-full border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent"
+                        className="px-4 py-2 border-2 w-full border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#c80f2e]focus:border-transparent"
                     >
                         <option value="" disabled>Select Time & Day</option>
                         {dayTimeIntervals.map((interval, index) => (
@@ -342,11 +342,11 @@ const Delivery = ({ step }) => {
                             </option>
                         ))}
                     </select>
-                    {errors.daytime && <span className="text-red-500">Please select the time & day</span>}
+                    {errors.daytime && <span className="text-[#c80f2e]">Please select the time & day</span>}
                 </div>
 
                 <form onSubmit={handleSubmit(onSubmit)}>
-                    <div className="bg-red-800 p-6 rounded-md text-white">
+                    <div className="bg-[#c80f2e] p-6 rounded-md text-white">
                         <h2 className="font-bold text-lg mb-4">
                             ORDERING INFORMATION:
                         </h2>

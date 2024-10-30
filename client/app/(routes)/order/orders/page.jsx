@@ -159,14 +159,14 @@ const page = () => {
                 setStep(item?.no);
               }}
               type="button"
-              className={`px-6 py-2 border-2 ${step === item?.no ? "text-white bg-[#DC2626]" : "text-[#DC2626]"
-                }  border-[#DC2626]  rounded font-medium`}
+              className={`px-6 py-2 border-2 ${step === item?.no ? "text-white bg-[#c80f2e]" : "text-[#c80f2e]"
+                }  border-[[#c80f2e]]  rounded font-medium`}
             >
               {item?.name}
             </button>
           );
         })}
-      {totalPrice < 10 && <div className="text-red-800 ">No delivery in order less than 10 Pounds</div>}
+      {totalPrice < 10 && <div className="text-[#c80f2e] ">No delivery in order less than 10 Pounds</div>}
       </div>
       <div>
         {step === 1 && (

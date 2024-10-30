@@ -29,8 +29,8 @@ const DealsCards = ({ data, path }) => {
 
   return (
     <div className="flex flex-col justify-between bg-white shadow-sm rounded-md max-w-xs w-full newshadow ">
-      <div className="w-full ">
-        {" "}
+      <div className="w-full">
+     
         <Link
           href={{
             pathname: path ? `${path}/deals/deals_view` : `deals/deals_view`,
@@ -40,7 +40,7 @@ const DealsCards = ({ data, path }) => {
           <img
             src={data.banner}
             alt="Card Image"
-            className="rounded-t-md w-full  "
+            className="rounded-t-md  w-full  "
           />
         </Link>
         <div className="px-4">

@@ -169,7 +169,7 @@ useEffect(()=>{
               alt="Deal Banner"
             />
             <div className="mt-5 md:mt-0 flex gap-4 mx-3 justify-between items-center">
-              <p className="text-red-800 font-bold">{dealViewData.title}</p>
+              <p className="text-[#c80f2e] font-bold">{dealViewData.title}</p>
 
               <p className="text-green-700 font-bold">
                 £{dealViewData?.sizes?.find((el) => el._id === sizeId)?.price}
@@ -181,7 +181,7 @@ useEffect(()=>{
               {pizzaCount > 0 && (
                 <div>
                   <h1 className="text-lg md:text-2xl font-medium mb-4">
-                    Choose Your Pizza
+                    Choose Your Pizza 
                   </h1>
                  
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-3 mb-4">
@@ -277,7 +277,7 @@ useEffect(()=>{
                         >
                           <MdEditSquare
                             size={30}
-                            className="text-red-800 hover:text-red-700"
+                            className="text-[#c80f2e] hover:text-[#c80f2e]"
                           />
                         </button>
                       )}      

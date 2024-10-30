@@ -53,7 +53,7 @@ const page = () => {
         >
 
 
-          <h1 className="mx-1 my-5 text-center font-semibold text-red-800">
+          <h1 className="mx-1 my-5 text-center font-semibold text-[#c80f2e]">
             {" "}
             PIZZA DELIVERY AND TAKEAWAY DEALS IN HOTHOUSE{" "}
           </h1>
@@ -98,7 +98,7 @@ const page = () => {
                 <p>
                 1 Joel St, Pinner, Northwood HA6 1LW, UK
 <br/>
-Hothousenorthwood@gmail.com</p>
+              Hothousenorthwood@gmail.com</p>
                 <p className=" flex items-center gap-3">
                   <BsFillTelephoneOutboundFill /> <p>01923510520</p>
                 </p>

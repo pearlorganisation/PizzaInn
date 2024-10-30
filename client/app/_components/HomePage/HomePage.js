@@ -92,7 +92,7 @@ const HomePage = () => {
       <>
       <div className=" mx-auto container pb-10 px-10">
       <div className=" px-10 pt-5 ">
-      <header class="text-center  bg-white">
+      <header className="text-center  bg-white">
       <div className="flex items-center justify-center mb-2">
       {/* <div class="flex-grow border-t border-red-800"></div> */}
 
@@ -113,8 +113,7 @@ const HomePage = () => {
             <div class="flex-grow border-t border-[#c80f2e]"></div>
          
           </div>
-             
-          {/* <div class="flex-grow border-t border-red-800"></div> */}
+                       {/* <div class="flex-grow border -t border-red-800"></div> */}
         </header>
       </div>
 </div>
