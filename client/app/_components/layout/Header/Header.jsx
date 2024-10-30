@@ -65,7 +65,7 @@ const Header = () => {
 
   return (
     <div className="bg-white z-10 fixed top-0 left-0 w-full ">
-      <div className="flex bg-[#DE1718] justify-between items-center px-0 md:px-5 py-1 ">
+      <div className="flex bg-[#DE1718] shadow-lg justify-between items-center px-0 md:px-5 py-1 ">
         <Link href="/" className="flex justify-center">
           <Image src={logo} className=" bg-white  md:w-full md:h-12 h-10 w-full " alt="logo" />
 
@@ -181,16 +181,6 @@ const Header = () => {
     />
   </div>
 
-  {/* <div className="relative  inline-flex items-center">
-  <a
-  href="/profile?tab=3"
-  className="inline-flex items-center text-white text-base rounded-b-md"
->
-    <TiArrowRepeatOutline
-      size={50}
-      className='bg-[#08579c] text-white p-2 rounded-lg  transition duration-300 cursor-pointer  shadow-lg hover:shadow-xl'
-    />  </a>
-  </div> */}
 </div>
 
   <span className="ml-2 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">Order Now</span>
