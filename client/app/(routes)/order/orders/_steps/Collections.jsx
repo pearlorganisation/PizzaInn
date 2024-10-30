@@ -86,7 +86,7 @@ const Collections = ({ step }) => {
     {...register("daytime", { required: true })}
     id="day"
     defaultValue=""
-    className="px-4 py-2 border-2 w-full border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-red-800 focus:border-transparent"
+    className="px-4 py-2 border-2 w-full border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#c80f2e focus:border-transparent"
   >
     <option value="" disabled>Select Time & Day</option>
     {dayTimeIntervals.map((interval, index) => (
@@ -95,10 +95,10 @@ const Collections = ({ step }) => {
       </option>
     ))}
   </select>
-  {errors.daytime && <span className="text-red-500">Please select the time & day</span>}
+  {errors.daytime && <span className="text-#c80f2e]">Please select the time & day</span>}
 </div>
 
-            <div className="bg-red-800 p-6 rounded-md text-white">
+            <div className="bg-[#c80f2e] p-6 rounded-md text-white">
                 <h2 className="font-bold text-lg mb-4">ORDERING INFORMATION:</h2>
                 <p className="mb-4">
                     <strong>Please note:</strong>{" "}

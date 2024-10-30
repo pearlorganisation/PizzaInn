@@ -228,7 +228,7 @@ const PizzaCustomizationModal = forwardRef(({ pizzaIndex, pizzaData,setDealDataP
       >
         <button className='fixed outline-none top-28 lg:top-20 right-8 md:p-4 z-[55]' onClick={() => { 
           enableScroll();
-          return modalRef.current.close()}} ><FaWindowClose size={30} className='text-red-800 hover:text-red-700'/></button>
+          return modalRef.current.close()}} ><FaWindowClose size={30}  className="text-[#c80f2e] hover:text-[#c80f2e]"/></button>
         <div className="relative p-4 w-full  max-h-full">
           <div className="md:max-w-6xl  mx-auto p-4 bg-white shadow-md rounded-lg my-">
             <div className="flex flex-col md:flex-row ">
@@ -294,7 +294,7 @@ const PizzaCustomizationModal = forwardRef(({ pizzaIndex, pizzaData,setDealDataP
                               <>
                                 {" "}
                                 {base?.price[0]?.price > 0 && (
-                                  <span className="bg-red-800 text-white rounded-lg px-1">
+                                  <span className="bg-[#c80f2e] text-white rounded-lg px-1">
                                     + £ {calledBy === "half" ? (base?.price[0]?.price)/2 : base?.price[0]?.price}
                                   </span>
                                 )}

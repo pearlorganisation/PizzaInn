@@ -110,14 +110,14 @@ export default function OrderViewModal ({viewData,setModal}) {
                  <p className="text-lg pb-2"> {item?.name}
                     {" "}
                     {size ? `(${price[0]})` : (item?.dealsData ? `(${item?.size})` : item?.allToppings?.size?.name ? `(${item?.allToppings?.size?.name})` : "" ) }<br/>
-                    {item?.allToppings && <span className="text-sm bg-red-800 text-white rounded-md px-2"> Customized </span>}
+                    {item?.allToppings && <span className="text-sm bg-[#c80f2e] text-white rounded-md px-2"> Customized </span>}
                     </p></div>
                   { mergedToppings && <p className=" text-green-800 pb-2 border p-1 px-2 mb-2 rounded-md">{mergedToppings}</p>}
                     <div className="flex justify-between gap-5">
                         <div className="font-semibold text-green-800 text-right  md:text-left">
                         {viewData?.orderType === 'collection' && item?.discount ? <>Price : £ {(item?.price - item?.discount).toFixed(2)} <span className="line-through text-sm text-slate-600">{item?.price}</span></> : `Price : £ ${item?.price}`}
                           <span className="text-sm"> x {item?.quantity}</span>
-                          <div className="text-sm text-red-800"> Quantity : {item?.quantity}</div>
+                          <div className="text-sm text-[#c80f2e]"> Quantity : {item?.quantity}</div>
                          
                         </div>
                         {viewData?.orderType === 'collection' && item?.discount &&   <div className="text-green-800 font-semibold">20% Discount on Collection</div>}
@@ -127,7 +127,7 @@ export default function OrderViewModal ({viewData,setModal}) {
                     item?.dealsData?.map((item,idx) =>
                   item?.name ? 
                   (<> <div key={idx} className=" ">
-                    <div className="min-w-[10rem] max-w-[10rem] md:min-w-[30rem]">{item?.name} <span className="text-sm bg-red-800 text-white rounded-md px-2"> Customized </span></div>
+                    <div className="min-w-[10rem] max-w-[10rem] md:min-w-[30rem]">{item?.name} <span className="text-sm bg-[#c80f2e] text-white rounded-md px-2"> Customized </span></div>
                     <div className="text-green-900 text-sm">{mergedDealToppingsArray[idx]}</div>
                   </div>
                   <div className="border-b py-1"></div>

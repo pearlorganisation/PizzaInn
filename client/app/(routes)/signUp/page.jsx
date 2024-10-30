@@ -94,7 +94,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type="text"
                 id="register-email"
                 className={`w-full px-3 py-2 border ${
-                  errors.firstName ? "border-red-800" : "border-gray-300"
+                  errors.firstName ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your First Name"
                 {...register("firstName", {
@@ -102,7 +102,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               {errors.firstName && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.firstName && "First Name is required"}
                 </p>
               )}
@@ -115,7 +115,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type="text"
                 id="register-email"
                 className={`w-full px-3 py-2 border ${
-                  errors.lastName ? "border-red-800" : "border-gray-300"
+                  errors.lastName ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your Last Name"
                 {...register("lastName", {
@@ -123,7 +123,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               {errors.lastName && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.lastName && "Last Name is required"}
                 </p>
               )}
@@ -136,7 +136,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type="Number"
                 id="register-email"
                 className={`w-full px-3 py-2 border ${
-                  errors.mobileNumber ? "border-red-800" : "border-gray-300"
+                  errors.mobileNumber ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your mobile number"
                 {...register("mobileNumber", {
@@ -144,7 +144,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               {errors.mobileNumber && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.mobileNumber && "Mobile number is required"}
                 </p>
               )}
@@ -157,7 +157,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type="email"
                 id="register-email"
                 className={`w-full px-3 py-2 border ${
-                  errors.email ? "border-red-800" : "border-gray-300"
+                  errors.email ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your email"
                 {...register("email", {
@@ -166,7 +166,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               {errors.email && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.email.message}
                 </p>
               )}
@@ -182,7 +182,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type="password"
                 id="register-password"
                 className={`w-full px-3 py-2 border ${
-                  errors.password ? "border-red-800" : "border-gray-300"
+                  errors.password ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your password"
                 {...register("password", {
@@ -194,7 +194,7 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               {errors.password && (
-                <p className="text-red-800 text-sm mt-5 ">
+                <p className="text-[#c80f2e] text-sm mt-5 ">
                   {errors.password.message}
                 </p>
               )}
@@ -207,7 +207,7 @@ const [isLoading,setIsLoading] = useState(false)
                 type={showConfirmPassword ? "text" : "password"}
                 id="confirm-password"
                 className={`w-full px-3 py-2 border ${
-                  errors.confirmPassword ? "border-red-800" : "border-gray-300"
+                  errors.confirmPassword ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Re-enter your password"
                 {...register("confirmPassword", {
@@ -217,13 +217,13 @@ const [isLoading,setIsLoading] = useState(false)
                 })}
               />
               <span
-                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer pt-5 text-red-800 hover:text-red-700"
+                className="absolute inset-y-0 right-0 pr-3 flex items-center cursor-pointer pt-5 text-[#c80f2e] hover:text-[#c80f2e]"
                 onClick={() => setShowConfirmPassword((prev) => !prev)}
               >
                 {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
               </span>
               {errors.confirmPassword && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.confirmPassword.message}
                 </p>
               )}
@@ -239,14 +239,14 @@ const [isLoading,setIsLoading] = useState(false)
               />
               <label htmlFor="terms" className="text-gray-700">
                 I accept the Pizza Inn{" "}
-                <a href="/termsAndConditions" className="text-red-800 hover:text-red-700 underline">
+                <a href="/termsAndConditions" className="text-[#c80f2e] hover:text-[#c80f2e] underline">
                   Terms & Conditions.
                 </a>{" "}
                 
               </label>
             </div>
             {errors.terms && (
-              <p className="text-red-800 text-sm mb-1">
+              <p className="text-[#c80f2e] text-sm mb-1">
                 {errors.terms.message}
               </p>
             )}
@@ -258,7 +258,7 @@ const [isLoading,setIsLoading] = useState(false)
              
             </button>
             {response && response?.success == false ? (
-            <div className="p-2 text-center text-red-600 font-semibold">
+            <div className="p-2 text-center text-[#c80f2e] font-semibold">
               {response?.message} !
              
             </div>
@@ -268,7 +268,7 @@ const [isLoading,setIsLoading] = useState(false)
             <p className="mt-4">
               Already have an account?{" "}
               <span>
-                <Link href="/login" className="text-red-800 hover:text-red-700 font-semibold">
+                <Link href="/login" className="text-[#c80f2e] hover:text-[#c80f2e] font-semibold">
                   Login here.
                 </Link>
               </span>

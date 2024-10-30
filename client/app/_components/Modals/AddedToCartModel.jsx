@@ -19,7 +19,7 @@ const AddedToCartModel = ({ isAddClicked, setIsAddClicked }) => {
               data-modal-hide="popup-modal"
             >
               <svg
-                class="w-3 h-3 text-red-600"
+                class="w-3 h-3 text-[#c80f2e]"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

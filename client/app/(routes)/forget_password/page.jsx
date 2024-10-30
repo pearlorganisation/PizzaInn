@@ -94,7 +94,7 @@ const Page = () => {
             <div className="flex flex-col  items-center justify-center px-4 pt-10 pb-20  mx-auto ">
              
                 <div className="w-full p-6 bg-white rounded-lg shadow    md:mt-0 sm:max-w-md sm:p-8">
-                    <h2 className="mb-1 text-center  text-xl font-bold leading-tight tracking-tight text-red-800 md:text-2xl ">
+                    <h2 className="mb-1 text-center  text-xl font-bold leading-tight tracking-tight text-[#c80f2e] md:text-2xl ">
                         Forgot Password
                     </h2>
        
@@ -109,13 +109,13 @@ const Page = () => {
                                 <input id="newsletter" aria-describedby="newsletter" type="checkbox" {...register('newsletter', { required: true })} className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 "/>
                             </div>
                             <div className="ml-3 text-sm">
-                                <label htmlFor="newsletter" className="font-light text-gray-500 ">I accept the <a className="font-medium text-red-800 hover:underline hover:text-red-700" href="/termsAndConditions">Terms and Conditions</a></label>
+                                <label htmlFor="newsletter" className="font-light text-gray-500 ">I accept the <a className="font-medium text-[#c80f2e] hover:underline hover:text[#c80f2e]" href="/termsAndConditions">Terms and Conditions</a></label>
                             </div>
                         </div>
-                        {(errors.newsletter)  && <p className="text-red-500 text-sm mt-1">Please accept the terms and conditions.</p>}
+                        {(errors.newsletter)  && <p className="text-[#c80f2e] text-sm mt-1">Please accept the terms and conditions.</p>}
                        
                         
-                        <button type="submit" disabled={isLoading} className="w-full text-white bg-red-800 hover:bg-red-700 focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">{isLoading ? <ClipLoader color=""/>: "Reset password" } </button>
+                        <button type="submit" disabled={isLoading} className="w-full text-white bg-[#c80f2e] hover:bg-[#c80f2e] focus:ring-4  font-medium rounded-lg text-sm px-5 py-2.5 text-center ">{isLoading ? <ClipLoader color=""/>: "Reset password" } </button>
                     </form>
                 </div>
             </div>

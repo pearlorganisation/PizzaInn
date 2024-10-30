@@ -149,7 +149,7 @@ const VegetarianToppings = ({ vegetarianTopData ,calledBy }) => {
                 <div
                   className={`cursor-pointer px-2 md:px-4 py-2 rounded text-center ${
                     selectedVeg[veg._id] === "single"
-                      ? "bg-red-800 text-white"
+                      ? "bg-[#c80f2e] text-white"
                       : "bg-gray-200 text-gray-900"
                   }`}
                   onClick={() => handleSelectionChange(veg._id, "single")}

@@ -86,7 +86,7 @@ const DeleteAccountModal = forwardRef((props, ref) => {
                         </button>
                         <div className="p-4 md:p-5 text-center">
                             <svg
-                                className="mx-auto mb-4 text-red-800 w-12 h-12"
+                                className="mx-auto mb-4 text-[#c80f2e] w-12 h-12"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -106,14 +106,14 @@ const DeleteAccountModal = forwardRef((props, ref) => {
                       <div className='flex justify-center'>
                             <button
                                 type="button"
-                                className="text-white bg-red-800 hover:bg-red-700 font-medium rounded-lg text-sm flex items-center px-5 py-2.5 text-center "
+                                className="text-white bg-[#c80f2e] hover:bg-[#c80f2e] first-letter:font-medium rounded-lg text-sm flex items-center px-5 py-2.5 text-center "
                                 onClick={deleteAccount}
                             >
                                   {isLoading ? <ClipLoader color="white" size={24}/>: "Yes, I'm sure" } 
                             </button>
                             <button
                                 type="button"
-                                className="py-2.5 px-5 ms-3 text-sm font-medium text-red-800 bg-white rounded-lg border border-gray-200 hover:bg-gray-50 hover:text-red-600 focus:z-10 focus:ring-4 focus:ring-gray-100 "
+                                className="py-2.5 px-5 ms-3 text-sm font-medium text-[#c80f2e] bg-white rounded-lg border border-gray-200 hover:bg-gray-50 hover:text-[#c80f2e] focus:z-10 focus:ring-4 focus:ring-gray-100 "
                                 onClick={() => setIsOpen(false)}
                             >
                                 No, cancel

@@ -20,7 +20,7 @@ const TotalPriceCard = () => {
     // <>
     //   {mount &&
     //     createPortal(
-          <div className="fixed bottom-5 rounded-md right-5 bg-red-600 p-6 text-white font-semibold text-center">
+          <div className="fixed bottom-5 rounded-md right-5 bg-[#08579C] p-6 text-white font-semibold text-center">
             <div> Price : {allToppings?.price}</div>
             <div>
               Extra Price :{" "}

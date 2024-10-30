@@ -70,11 +70,11 @@ const Page = () => {
     <>
       <div className="flex items-center justify-center  px-4 pt-10 pb-20  mx-auto ">
         <div className="w-full max-w-md bg-white p-8 shadow-lg rounded-lg">
-          <h2 className="text-2xl text-red-800 font-bold mb-6 text-center">
+          <h2 className="text-2xl text-[#c80f2e] font-bold mb-6 text-center">
             Enter New Password
           </h2>
           {response && response.status === false && (
-            <div className="p-2 text-center text-red-600 font-semibold">
+            <div className="p-2 text-center text-[#c80f2e] font-semibold">
               {response.message}
             </div>
           )}
@@ -86,7 +86,7 @@ const Page = () => {
               <input
                 type="password"
                 className={`w-full px-3 py-2 border ${
-                  errors.newPassword ? "border-red-500" : "border-gray-300"
+                  errors.newPassword ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Enter your new password"
                 {...register("newPassword", {
@@ -94,7 +94,7 @@ const Page = () => {
                 })}
               />
               {errors.newPassword && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.newPassword.message}
                 </p>
               )}
@@ -107,7 +107,7 @@ const Page = () => {
               <input
                 type="password"
                 className={`w-full px-3 py-2 border ${
-                  errors.confirmPassword ? "border-red-500" : "border-gray-300"
+                  errors.confirmPassword ? "border-[#c80f2e]" : "border-gray-300"
                 } rounded-md focus:outline-none focus:ring focus:ring-slate-300`}
                 placeholder="Confirm your new password"
                 {...register("confirmPassword", {
@@ -117,7 +117,7 @@ const Page = () => {
                 })}
               />
               {errors.confirmPassword && (
-                <p className="text-red-800 text-sm mt-1">
+                <p className="text-[#c80f2e] text-sm mt-1">
                   {errors.confirmPassword.message}
                 </p>
               )}
@@ -126,7 +126,7 @@ const Page = () => {
             <div>
               <button
                 type="submit"
-                className="w-full text-white bg-red-800 hover:bg-red-700 focus:ring-4 outline-none focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
+                className="w-full text-white bg-[#c80f2e] hover:bg-[#c80f2e] focus:ring-4 outline-none focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center "
               >
                 {isLoading ? <ClipLoader color=""/>: "Reset password" } 
               </button>
