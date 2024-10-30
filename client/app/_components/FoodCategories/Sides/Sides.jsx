@@ -103,11 +103,29 @@ const Sides = () => {
               <React.Fragment key={category}>
                 {isCategoryMatched && (
                   <div className="flex items-center justify-center mb-2 p-5">
-                      <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
+                      {/* <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
                       <h1 className={`px-4 ${category === "VEGETARIAN" || category === "Vegetarian" ? "text-green-800": "text-[#c80f2e]"}  font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl`}>
                       {category}
                     </h1>
-                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div>
+                    <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "border-green-800": "border-[#c80f2e]"} `}></div> */}
+                       <div className="flex items-center justify-center align-middle ">
+                
+                <div
+className={`w-[400px] h-[90px] flex items-center justify-center font-bold text-black text-center text-xl ${
+category === "VEGETARIAN" || category === "meat" 
+? "text-white bg-green-500" 
+: "bg-red-600"
+}`}
+style={{
+// background: "#15803D", 
+clipPath: "polygon(10% 20%, 80% 20%, 70% 50%, 80% 80%, 10% 80%, 20% 50%)"
+}}
+>
+<span className="text-white mr-10">{category}</span> {/* Removed ml-6 */}
+
+</div>
+            {/* <div className={`flex-grow border-t ${category === "VEGETARIAN" || category === "Vegetarian" ? "": "border-[#c80f2e]"} `}></div> */}
+          </div>
                   </div>
                 )}
 
