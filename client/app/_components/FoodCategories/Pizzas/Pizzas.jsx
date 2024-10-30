@@ -1,13 +1,11 @@
 import React, {  useId, useState } from "react";
 import useSWR from "swr";
 import PizzaCards from "./pizzaCards/PizzaCards";
-import { ClockLoader } from "react-spinners";
 import Image from "next/image";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
-import { clearSet } from "@/app/lib/features/cartSlice/cartSlice";
 import { getCustomizationDetails } from "@/app/lib/features/orderDetails/orderDetailsslice";
-import { VscActivateBreakpoints } from "react-icons/vsc";
+
 
 // -------------------data fetching function-----------------------
 const pizzaFetcher = (...args) => fetch(...args).then((res) => res.json());
@@ -154,8 +152,8 @@ const Pizzas = () => {
                         <div
   className={`w-[400px] h-[90px] flex items-center justify-center font-bold text-black text-center text-xl ${
     category === "VEGETARIAN" || category === "meat" 
-      ? "text-white bg-green-500" 
-      : "bg-red-600"
+      ? "text-white bg-green-700" 
+      : "bg-[#C80F2E]"
   }`}
   style={{
     // background: "#15803D", 

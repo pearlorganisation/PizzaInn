@@ -113,8 +113,8 @@ const Sides = () => {
                 <div
 className={`w-[400px] h-[90px] flex items-center justify-center font-bold text-black text-center text-xl ${
 category === "VEGETARIAN" || category === "meat" 
-? "text-white bg-green-500" 
-: "bg-red-600"
+? "text-white bg-green-700" 
+: "bg-[#C80F2E]"
 }`}
 style={{
 // background: "#15803D", 

@@ -84,7 +84,7 @@ const PizzaCards = ({ data, idx }) => {
       </div>
       <div className=" h-full px-2">
         <div className="mt-3">
-          <h2 className="text-xl font-semibold mb-1 ">{data?.pizzaName} (20% Off on Collection)</h2>
+          <h2 className="text-xl font-semibold mb-1 ">{data?.pizzaName}</h2>
           <p className="text-sm font-semibold text-gray-500 mb-4 whitespace-wrap overflow-hidden ">
             {combineNames()}
           </p>
