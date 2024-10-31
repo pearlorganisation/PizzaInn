@@ -95,8 +95,7 @@ const DealsCards = ({ data, path }) => {
             }}
             className="hover:bg-[#08579C] bg-[#08579C] text-center text-white p-2  w-36 rounded-lg"
           >
-            Just Deal
-          </Link>
+Add to Cart          </Link>
         </div>
       </div>
     </div>
