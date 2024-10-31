@@ -7,6 +7,7 @@ import AddedToCartModel from "@/app/_components/Modals/AddedToCartModel";
 import { getCustomizationDetails } from "@/app/lib/features/orderDetails/orderDetailsslice";
 import { RiCheckboxBlankCircleFill } from "react-icons/ri";
 import { VscActivateBreakpoints } from "react-icons/vsc";
+import { FaArrowRight } from "react-icons/fa";
 
 const PizzaCards = ({ data, idx }) => {
   const dispatch = useDispatch();
@@ -56,13 +57,14 @@ const PizzaCards = ({ data, idx }) => {
       className="flex relative flex-col justify-between bg-white rounded-md max-w-[17rem]  2xl:max-w-xs w-full newshadow mb-10 "
       key={idx}
     >
-      <div className="">
-        <img
-          src={data?.banner}
-          alt="Card Image"
-          className="h-52 w-full rounded-t-md object-cover"
-        />
-      </div>
+   <div className="relative">
+  <img
+    src={data?.banner}
+    alt="Card Image"
+    className="h-52 w-full rounded-t-md object-cover"
+  />
+
+  </div>
       <div className="flex  absolute justify-end  w-full">
         {" "}
         <div
@@ -136,9 +138,14 @@ const PizzaCards = ({ data, idx }) => {
             }}
             href={`/menu/product/customisePizza`}
           >
-            <TbEdit size={30} className="text-slate-800 hover:text-[#c80f2e]" />
+            {/* <TbEdit size={30} className="text-slate-800 hover:text-[#c80f2e]" /> */}
+            <div className="absolute inset-0 flex items-center justify-center text-[#353535DE] bg-white h-12 mt-20 font-bold text-lg rounded-md ml-32 gap-3">
+   <button>customise
+    </button>  <FaArrowRight />
+
+  </div>
           </Link>
-          <div className="bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center w-full">
+          <div className="border border-[#00AB00] hover:bg-green-700  hover:text-white rounded-lg flex items-center justify-centern ml-24 w-[50%]">
             <button
               onClick={() => {
                 selectedData &&
@@ -155,10 +162,10 @@ const PizzaCards = ({ data, idx }) => {
                     })
                   );
               }}
-              className="text-center rounded-lg w-full p-2 text-white"
+              className="text-center rounded-lg w-full p-2 text-[#00AB00] hover:text-white"
               type="button"
             >
-              Add
+              Add to Cart
             </button>
           </div>
         </div>
