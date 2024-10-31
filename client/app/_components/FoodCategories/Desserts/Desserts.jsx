@@ -73,7 +73,19 @@ const Desserts = () => {
         <div className="flex gap-2 mx-4 md:mx-8 my-4 flex-wrap ">
           <span className="font-bold">Filter :</span>
           {filterData?.data?.map((data) => (
+            // <div className="flex gap-2" key={data.filter}>
+            //   <input
+            //     type="radio"
+            //     name="type"
+            //     value={data.filter}
+            //     id={data.filter}
+            //     defaultChecked={data.filter === "All"}
+            //     onClick={() => setSelectedType(data.filter)}
+            //   />
+            //   <label htmlFor={data.filter}>{data.filter}</label>
+            // </div>
             <div className="flex gap-2" key={data.filter}>
+            <label className="radio-label flex items-center gap-2 cursor-pointer">
               <input
                 type="radio"
                 name="type"
@@ -81,9 +93,22 @@ const Desserts = () => {
                 id={data.filter}
                 defaultChecked={data.filter === "All"}
                 onClick={() => setSelectedType(data.filter)}
+                className="radio-input hidden peer"
               />
-              <label htmlFor={data.filter}>{data.filter}</label>
-            </div>
+              <span
+                className={`custom-radio w-5 h-5 rounded-full border-2 border-yellow-500  relative p-1 // Added padding
+                  peer-checked:border-yellow-500 peer-checked:bg-yellow-300`}
+              >
+                <span
+                  className={`absolute w-2.5 h-2.5 bg-yellow-500 rounded-full opacity-0 
+                    transition-opacity duration-200 peer-checked:opacity-100 top-1/2 left-1/2 
+                    transform -translate-x-1/3 -translate-y-1/4`} // Kept inner circle positioning
+                ></span>
+              </span>
+              <span className="text-gray-800 text-sm font-normal">{data.filter}</span>
+            </label>
+          </div>
+
           ))}
         </div>
       </div>
