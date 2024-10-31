@@ -96,7 +96,7 @@ const Desserts = () => {
                 className="radio-input hidden peer"
               />
               <span
-                className={`custom-radio w-5 h-5 rounded-full border-2 border-gray-500 relative p-1 // Added padding
+                className={`custom-radio w-5 h-5 rounded-full border-2 border-yellow-500  relative p-1 // Added padding
                   peer-checked:border-yellow-500 peer-checked:bg-yellow-300`}
               >
                 <span
