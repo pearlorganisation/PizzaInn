@@ -29,7 +29,7 @@ const DealsCards = ({ data, path }) => {
 
   return (
     <div className="flex flex-col justify-between bg-white shadow-sm rounded-md max-w-xs w-full newshadow ">
-      <div className="w-full">
+      <div className="px-5 py-5  ">
      
         <Link
           href={{
@@ -40,7 +40,7 @@ const DealsCards = ({ data, path }) => {
           <img
             src={data.banner}
             alt="Card Image"
-            className="rounded-t-md  w-full  "
+            className=" rounded-md w-full  "
           />
         </Link>
         <div className="px-4">
@@ -61,25 +61,19 @@ const DealsCards = ({ data, path }) => {
                 </React.Fragment>
               ))}
             </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-3 mb-1   ">
-        <div className="max-w-sm mx-1 flex gap-1">
-          {data.sizes?.length === 1 ? (
+            {data.sizes?.length === 1 ? (
             <div className="w-full">
-         <span className="text-black font-extrabold text-nowrap"
+         <span className="text-[#DF4561] font-extrabold text-nowrap"
          >Pizza Size:{data.sizes[0].size} - £ {data.sizes[0].price}</span>
             </div>
           ) : (
             <Select
-              className="w-full text-nowrap"
+              className="w-full text-nowrap text-[#DF4561]"
               placeholder={`Pizza Size ${data.sizes[0].size} - £ ${data.sizes[0].price}`}
               options={data.sizes.map((size) => ({
                 label: (
                   <>
-                    <span className="text-black font-extrabold text-nowrap">Pizza Size: {size.size} - £ {size.price}</span>
+                    <span className="text-[#DF4561]  text-nowrap">Pizza Size: {size.size} - £ {size.price}</span>
                   </>
                 ),
                 value: size._id,
@@ -88,6 +82,13 @@ const DealsCards = ({ data, path }) => {
             />
           )}
 
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-1 mb-1   ">
+        <div className="max-w-sm mx-1 flex gap-1 justify-center">
+         
           <Link
             href={{
               pathname: path ? `${path}/deals/deals_view` : `deals/deals_view`,

@@ -128,46 +128,68 @@ const Sauce = ({ sauceData ,calledBy }) => {
       <table className="min-w-full divide-y divide-gray-200 shadow-lg">
         <thead className="bg-gray-50">
           <tr>
-            <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
+            <th className="px-2 md:px-2 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
               Sauce
             </th>
-            <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
+            {/* <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
               Single
             </th>
             <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
               Double
-            </th>
+            </th> */}
           </tr>
         </thead>
         <tbody className="bg-white divide-y divide-gray-200">
           {sauceData.map((sauce) => (
             <tr key={sauce._id} className="hover:bg-gray-100">
-              <td className="px-2 md:px-6 py-2 md:py-4 whitespace-wrap text-sm font-medium text-gray-900">
+              <td className="px-2 md:px-6 py-2 md:py-2 whitespace-wrap text-sm font-medium text-gray-900">
                 {sauce.name}
               </td>
-              <td className="px-2 md:px-6 py-2 md:py-4 whitespace-nowrap text-sm text-gray-500">
+              <td className="px-2 md:px-6 py-2 md:py-4 whitespace-nowrap text-sm text-gray-500 flex flex-row gap-2">
+                <div onClick={() => handleSelectionChange(sauce._id, "single")} className="relative flex w-48 justify-center">
                 <div
-                  className={`cursor-pointer px-2 md:px-4 py-2 rounded text-center ${
+                  className={`cursor-pointer px-2 md:px-4 py-2 rounded text-center   w-28 ${
                     selectedSauces[sauce._id] === "single"
                       ? "bg-[#c80f2e] text-white"
                       : "bg-gray-200 text-gray-900"
                   }`}
-                  onClick={() => handleSelectionChange(sauce._id, "single")}
+                  
                 >
-                  £ {calledBy === "half" ? ((sauce?.price[0]?.singlePrice)/2): sauce?.price[0]?.singlePrice}
+                <span className="mr-6">£{calledBy === "half" ? ((sauce?.price[0]?.singlePrice)/2): sauce?.price[0]?.singlePrice}</span>
+                </div>
+                <div
+                  className={`cursor-pointer px-2 md:px-4 py-2 rounded-b rounded-tr text-center absolute right-0 ${
+                    selectedSauces[sauce._id] === "single"
+                      ? "bg-[#08579c] text-white border-0"
+                      : "bg-[#08579c] text-white border-0"
+                  }`}>
+                <span>Single</span> </div>
                 </div>
               </td>
               <td className="px-2 md:px-4 py-2 whitespace-nowrap text-sm text-gray-500">
+              <div      onClick={() => handleSelectionChange(sauce._id, "double")} className="relative flex w-48 justify-center">
                 <div
-                  className={`cursor-pointer px-2 md:px-4 py-2 rounded text-center ${
+                  className={`cursor-pointer px-2 md:px-4 py-2 rounded text-center  w-28 pr-9 ${
+
                     selectedSauces[sauce._id] === "double"
                       ? "bg-green-800 text-white"
                       : "bg-gray-200 text-gray-900"
                   }`}
-                  onClick={() => handleSelectionChange(sauce._id, "double")}
+                  
                 >
-                  £ {calledBy === "half" ?((sauce?.price[0]?.doublePrice)/2) :sauce?.price[0]?.doublePrice}
+                 
+                 <span className="mr-6"> £ {calledBy === "half" ?((sauce?.price[0]?.doublePrice)/2) :sauce?.price[0]?.doublePrice}</span>
                 </div>
+                <div
+                  className={`cursor-pointer px-2 md:px-4 py-2 rounded-b rounded-tr text-center absolute right-0 ${
+                    selectedSauces[sauce._id] === "double"
+                      ? "bg-[#08579c] text-white border-0"
+                      : "bg-[#08579c] text-white border-0"
+                  }`}>
+                <span>Double</span> </div>
+                
+                </div>
+                
               </td>
             </tr>
           ))}

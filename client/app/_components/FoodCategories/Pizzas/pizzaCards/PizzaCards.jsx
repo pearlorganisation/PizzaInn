@@ -116,7 +116,7 @@ const PizzaCards = ({ data, idx }) => {
           </select>
         </div>
 
-        <div className="flex gap-3 items-center mt-2 px-2">
+        <div className="flex  gap-3 justify-end pe-2 px-0">
           <Link
             onClick={() => {
               selectedData &&
@@ -139,13 +139,14 @@ const PizzaCards = ({ data, idx }) => {
             href={`/menu/product/customisePizza`}
           >
             {/* <TbEdit size={30} className="text-slate-800 hover:text-[#c80f2e]" /> */}
-            <div className="absolute inset-0 flex items-center justify-center text-[#353535DE] bg-white h-12 mt-20 font-bold text-lg rounded-md ml-32 gap-3">
-   <button>customise
-    </button>  <FaArrowRight />
+            <div className="absolute inset-0 flex items-center justify-center text-[#08579C] bg-white h-10 mt-36 font-bold text-sm rounded-l-md ml-32 gap-2 border-l border-t border-b">
+
+   <button>Customise
+    </button>  <FaArrowRight  className="text-sm"/>
 
   </div>
           </Link>
-          <div className="border border-[#00AB00] hover:bg-green-700  hover:text-white rounded-lg flex items-center justify-centern ml-24 w-[50%]">
+          <div className=" mt-1  rounded-lg flex  w-[50%] justify-end  ">
             <button
               onClick={() => {
                 selectedData &&
@@ -162,7 +163,7 @@ const PizzaCards = ({ data, idx }) => {
                     })
                   );
               }}
-              className="text-center rounded-lg w-full p-2 text-[#00AB00] hover:text-white"
+              className="text-center rounded-lg border hover:text-white border-[#00AB00] hover:bg-green-700 w-full p-2 text-[#00AB00] hover:text-white"
               type="button"
             >
               Add to Cart
