@@ -212,62 +212,88 @@ const handleSelectChange = (option) => {
 
   return (
     <>
-      <div className="bg-white shadow-md rounded-md max-w-[15rem] w-full mb-10 pb-8 newshadow flex flex-col justify-between">
+
+      <div className="bg-white shadow-md rounded-md max-w-[15rem] w-full mb-10  newshadow flex flex-col justify-between">
         <img
           src={data.banner}
           alt="Card Image"
-          className="rounded-t-md object-cover w-full h-44"
-        />
+          className="rounded-t-md object-cover w-full h-44"/>
+                 <h2 className="text-xl font-semibold  pl-3">{data.drink}</h2>
+<div className="flex flex-col">
+  {/* Label */}
+  <label className="text-sm text-gray-500 pl-3 font-extrabold">Price & Type</label>
+  <div className=" ">
 
-        <h2 className="text-xl font-semibold mb-2 p-3">{data.drink}</h2>
-        {/* <div>
-          {data.price?.length === 1 ? (
-            <div className="w-full p-2 border border-gray-300 rounded-lg bg-gray-200 text-gray-500">
-              {`${data.price[0].drinkType}  £ ${data.price[0].price}`}
-            </div>
-          ) : (
-            <Select
-              className="w-full"
-              placeholder={`${data.price[0].drinkType} £${data.price[0].price}`}
-              options={data.price.map((drinkItem) => ({
-                label: `${drinkItem.drinkType} £${drinkItem.price}`,
-                name: data.drink,
-                price: drinkItem?.price,
-                size: drinkItem.drinkType,
-                value: drinkItem?._id,
-                img: data?.banner,
-              }))}
-              onChange={(option) => setSelectedOption(option)}
-            />
-          )}
+  {/* Dropdown or Text */}
+ <div className="flex flex-row items-center">
+    {data.price?.length === 1 ? (
+      <div className="w-full border-b border-gray-300 text-gray-700 py-1 pl-3">
+        {`${data.price[0].drinkType} £${data.price[0].price}`}
+      </div>
+    ) : (
+      <Select
+        className="w-full text-nowrap"
+        placeholder={`${data.price[0].drinkType} £${data.price[0].price} `}
+        options={data.price.map((drinkItem) => ({
+          label: `${drinkItem.drinkType} £${drinkItem.price}`,
+          name: data.drink,
+          price: drinkItem?.price,
+          size: drinkItem.drinkType,
+          value: drinkItem?._id,
+          img: data?.banner,
+        }))}
+        onChange={(option) => setSelectedOption(option)}
+        styles={{
+          control: (base) => ({
+            ...base,
+            borderWidth: 0, // Hide outer border
+            boxShadow: "none",
+            minHeight: "auto", // Make it compact
+          }),
+          placeholder: (base) => ({
+            ...base,
+            color: "black",
+            fontWeight: "extrabold",
+          }),
+          indicatorSeparator: () => ({
+            display: "none", // Hide separator between value and arrow
+          }),
+          dropdownIndicator: (base) => ({
+            ...base,
+            color: "gray",
+          }),
+        }}
+      />
+    )}
+   </div> 
+   
+    </div>
 
-          <div
-            className="bg-green-600 hover:bg-green-700 cursor-pointer"
-            onClick={() =>
-              handleAddDrinkToCart({
-                id: data._id,
-              })
-            }
-          >
-            <p className="text-center p-2 text-white">Add</p>
-          </div>
-        </div> */}
-<div className="flex flex-row gap-4 px-2 items-center">
-      <div className="text-[#7A7A7ADE]">Price & Type</div>
 
-      {/* Display selected option in front of the dropdown icon */}
+  {/* Add Button */}
+  <div
+    className="bg-green-600 hover:bg-green-700 cursor-pointer mt-2 w-full "
+    onClick={() => handleAddDrinkToCart({ id: data._id })}
+  >
+    <p className="text-center p-2 text-white">Add</p>
+  </div>
+</div>
+{/* <div className="flex flex-row gap-4 px-2 items-center">
+      <div className="text-[#7A7A7ADE]">Price & Type</div> */}
+{/* 
+      Display selected option in front of the dropdown icon
       <div className="w-20">
       {selectedDrink && (
         <div className="text-[#333] font-semibold ">{`${selectedDrink.size} £${selectedDrink.price}`}</div>
       )}
-</div>
-      <div className="relative">
+</div> */}
+      {/* <div className="relative">
         <IoMdArrowDropdown
           className="text-[#7A7A7ADE] mt-1 text-2xl cursor-pointer"
           onClick={toggleDropdown}
         />
 
-        {/* Dropdown Content */}
+  
         {isDropdownOpen && (
           <div className="absolute right-0 w-56 bg-white shadow-lg rounded-lg p-2 z-10">
             {data.price?.length === 1 ? (
@@ -301,8 +327,11 @@ const handleSelectChange = (option) => {
             </div>
           </div>
         )}
-      </div>
-    </div>
+      </div> */}
+
+
+      
+    {/* </div> */}
         <div></div>
 
 

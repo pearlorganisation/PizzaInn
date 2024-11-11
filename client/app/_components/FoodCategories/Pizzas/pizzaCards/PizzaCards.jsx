@@ -116,7 +116,7 @@ const PizzaCards = ({ data, idx }) => {
           </select>
         </div>
 
-        <div className="flex gap-3 items-center mt-2 px-2">
+        <div className="flex gap-3 items-center  px-0">
           <Link
             onClick={() => {
               selectedData &&
@@ -139,9 +139,10 @@ const PizzaCards = ({ data, idx }) => {
             href={`/menu/product/customisePizza`}
           >
             {/* <TbEdit size={30} className="text-slate-800 hover:text-[#c80f2e]" /> */}
-            <div className="absolute inset-0 flex items-center justify-center text-[#353535DE] bg-white h-12 mt-20 font-bold text-lg rounded-md ml-32 gap-3">
-   <button>customise
-    </button>  <FaArrowRight />
+            <div className="absolute inset-0 flex items-center justify-center text-[#08579C] bg-white h-10 mt-36 font-bold text-sm rounded-l-md ml-32 gap-2 border-l border-t border-b">
+
+   <button>Customise
+    </button>  <FaArrowRight  className="text-sm"/>
 
   </div>
           </Link>

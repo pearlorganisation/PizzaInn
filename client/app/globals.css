@@ -11,6 +11,28 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Global Styles for Polygon Animation */
+
+/* Animation for entering and leaving */
+.polygon-enter-active {
+  animation: 2.5s polygon reverse ease-in-out; /* Slightly slower animation (2.5 seconds) */
+}
+
+.polygon-leave-active {
+  animation: 2.5s polygon ease-in-out; /* Smooth exit animation */
+}
+
+/* Define the keyframes for the polygon animation */
+@keyframes polygon {
+  0% {
+    clip-path: polygon(0 0, 50% 0, 100% 0, 100% 50%, 100% 100%, 50% 100%, 0 100%, 0 50%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 50% 25%, 50% 50%, 75% 50%, 50% 50%, 50% 75%, 50% 50%, 25% 50%);
+  }
+}
+
+
 
 @font-face {
   font-family: "Proxima Nova Rg";
