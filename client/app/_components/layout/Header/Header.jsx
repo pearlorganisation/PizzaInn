@@ -64,7 +64,7 @@ const Header = () => {
   }
 
   return (
-    <div className="bg-white z-10 fixed top-0 left-0 w-full ">
+    <div className="bg-transparent z-10 fixed top-0 left-0 w-full ">
       <div className="flex bg-[#DE1718] shadow-lg justify-between items-center px-0 md:px-5 py-1 ">
         <Link href="/" className="flex justify-center">
           <Image src={logo} className=" bg-white  md:w-full md:h-12 h-10 w-full " alt="logo" />
@@ -113,8 +113,8 @@ const Header = () => {
           </Link>
         </ul>
       </div>
-<div   className="flex  justify-center">
-      <div ref={scrollRef} className=" bg-[#08579c]  md:rounded-b-lg w-full md:w-fit sm:justify-center flex lg:pt-0 items-center gap-5 justify-between px-5 flex-nowrap overflow-x-auto no-scrollbar  text-base sm:text-lg text-white font-semibold xl:gap-10">
+<div   className="flex   justify-center">
+      <div ref={scrollRef} className=" bg-[#08579c]   md:rounded-b-lg  sm:justify-center flex lg:pt-0 items-center gap-5 justify-between px-5 flex-nowrap overflow-x-auto no-scrollbar  text-base sm:text-lg text-white font-semibold xl:gap-10">
         {/* Left Arrow */}
       {showLeftArrow && (
            <div

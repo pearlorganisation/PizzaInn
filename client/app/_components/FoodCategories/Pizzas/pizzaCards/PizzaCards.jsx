@@ -116,7 +116,7 @@ const PizzaCards = ({ data, idx }) => {
           </select>
         </div>
 
-        <div className="flex gap-3 items-center  px-0">
+        <div className="flex  gap-3 justify-end pe-2 px-0">
           <Link
             onClick={() => {
               selectedData &&
@@ -146,7 +146,7 @@ const PizzaCards = ({ data, idx }) => {
 
   </div>
           </Link>
-          <div className="border border-[#00AB00] hover:bg-green-700  hover:text-white rounded-lg flex items-center justify-centern ml-24 w-[50%]">
+          <div className=" mt-1  rounded-lg flex  w-[50%] justify-end  ">
             <button
               onClick={() => {
                 selectedData &&
@@ -163,7 +163,7 @@ const PizzaCards = ({ data, idx }) => {
                     })
                   );
               }}
-              className="text-center rounded-lg w-full p-2 text-[#00AB00] hover:text-white"
+              className="text-center rounded-lg border hover:text-white border-[#00AB00] hover:bg-green-700 w-full p-2 text-[#00AB00] hover:text-white"
               type="button"
             >
               Add to Cart
