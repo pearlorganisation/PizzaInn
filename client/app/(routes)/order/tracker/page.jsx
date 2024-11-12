@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
 import { BsFillTelephoneOutboundFill } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
+import { LuBadgeCheck } from "react-icons/lu";
 
 const page = () => {
 
@@ -63,36 +64,43 @@ const page = () => {
               <div className="flex gap-2 border-y-[1px] border-slate-100 bg-slate-400/30 px-3 py-2 ">
                 <p>Monday </p>
                 <p>11:30,01:00</p>
+                <LuBadgeCheck className="text-green-500 ml-4"  size={24}/>
               </div>
 
               <div className="flex gap-2 px-3 py-2">
                 <p>Tuesday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-red-900 ml-4"  size={24}/>
               </div>
               <div className="flex gap-2 border-y-[1px] border-slate-100 bg-slate-400/30 px-3 py-2  ">
                 <p>Wednesday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-green-500 ml-4"  size={24}/>
               </div>
               <div className="flex gap-2 px-3 py-2">
                 <p>Thursday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-red-900 ml-4"  size={24}/>
               </div>
 
               <div className="flex gap-2 border-y-[1px] border-slate-100 bg-slate-400/30 px-3 py-2  ">
                 <p>Friday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-green-500 ml-4"  size={24}/>
               </div>
               <div className="flex gap-2 px-3 py-2">
                 <p>Saturday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-red-900 ml-4"  size={24}/>
               </div>
               <div className="flex gap-2 border-y-[1px] border-slate-100 bg-slate-400/30 px-3 py-2 ">
                 <p>Sunday </p>
                 <p>11:30, 01:00</p>
+                <LuBadgeCheck className="text-green-500 ml-4"  size={24}/>
               </div>
             </div>
 
-            <div className=" text-center md:py-2 lg:justify-self-end items-center md:block flex justify-center">
+            <div className=" text-center md:py-2 lg:justify-self-end items-center md:block flex justify-center p-20">
               <div className=" md:flex-none flex flex-col  justify-center items-center ">
 
                 <p>
@@ -100,7 +108,7 @@ const page = () => {
 <br/>
               Hothousenorthwood@gmail.com</p>
                 <p className=" flex items-center gap-3">
-                  <BsFillTelephoneOutboundFill /> <p>01923510520</p>
+                <BsFillTelephoneOutboundFill className="text-green-900" /> <p>01923510520</p>
                 </p>
               </div>
             </div>
