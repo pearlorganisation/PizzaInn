@@ -113,7 +113,7 @@ const Pizzas = () => {
           </div>
 
           <div className="flex w-[50%] ps-5 md:w-auto  gap-2 md:mx-8 my-4 flex-wrap ">
-            <span className="font-bold">Filter :</span>
+            {/* <span className="font-bold">Filter :</span> */}
             {filterData?.data?.map((data) => (
     <div className="flex gap-2" key={data.filter}>
     <label className="radio-label flex items-center gap-2 cursor-pointer">

@@ -126,19 +126,7 @@ const Sauce = ({ sauceData ,calledBy }) => {
         </span>
       </h1>
       <table className="min-w-full divide-y divide-gray-200 shadow-lg">
-        <thead className="bg-gray-50">
-          <tr>
-            <th className="px-2 md:px-2 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
-              Sauce
-            </th>
-            {/* <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
-              Single
-            </th>
-            <th className="px-2 md:px-6 py-2 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wide">
-              Double
-            </th> */}
-          </tr>
-        </thead>
+       
         <tbody className="bg-white divide-y divide-gray-200">
           {sauceData.map((sauce) => (
             <tr key={sauce._id} className="hover:bg-gray-100">

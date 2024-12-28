@@ -244,7 +244,7 @@ const PizzaCustomizationModal = forwardRef(({ pizzaIndex, pizzaData,setDealDataP
             </div> 
 
                 <div className="mt-4">
-                  <h2 className="text-lg font-semibold text-gray-800">SIZESs</h2>
+                  <h2 className="text-lg font-semibold text-gray-800">SIZES</h2>
                   <div className="mt-2 space-y-2">
                     {Array.isArray(customizationData?.priceSection) &&
                       customizationData?.priceSection.map((data, idx) => (

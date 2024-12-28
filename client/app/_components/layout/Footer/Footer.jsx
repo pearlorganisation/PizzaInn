@@ -44,18 +44,19 @@ const Footer = () => {
             <p className="flex justify-center  mt-2  ">
               <FaStore className="mr-2" size={20} />
               <span className=" text-center text-nowrap">
-                Store : 91 Joel St, Pinner, Northwood HA6 1LW, UK
+                Store : 420b Alexandra Avenue, Harrow, HA2 9TL
               </span>
             </p>
             <p className="flex items-center mt-2">
               <IoMdMail className="mr-2" size={20} />
               <span className="text-center">
-                Email : Hothousenorthwood@gmail.com
+                Email :
+                 {/* Hothousenorthwood@gmail.com */}
               </span>
             </p>
             <p className="flex items-center mt-2">
               <FaPhone className="mr-2" size={20} />
-              <span className="text-center"> Contact Us : 01923510520</span>
+              <span className="text-center"> Contact Us : 020 8429 8181</span>
             </p>
           </div>
         </div>
@@ -75,7 +76,7 @@ const Footer = () => {
         </div>
         <div className="flex justify-center  items-center gap-5 m-2">
           <a
-            href="https://www.facebook.com/HotHousePizzaNorthwood"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-500"
@@ -83,7 +84,7 @@ const Footer = () => {
             <FiFacebook size={24} />
           </a>
           <a
-            href="https://www.instagram.com/hothousepizzanorthwood"
+            href="https://www.instagram.com/thepizzainn_uk/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-500"
@@ -91,7 +92,8 @@ const Footer = () => {
             <SlSocialInstagram size={24} />
           </a>
           <a
-            href="https://wa.me/+447469367116"
+            // href="https://wa.me/+447469367116"
+            href="#"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-yellow-500"
