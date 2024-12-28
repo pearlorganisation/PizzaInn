@@ -114,12 +114,13 @@ const Collections = ({ step }) => {
                     from directly.
                 </p>
                 <p className="mb-2">Your order is being placed with:</p>
-                <p className="font-bold">91 Joel St, Pinner, Northwood HA6 1LW, UK
+                <p className="font-bold">420b Alexandra Avenue, Harrow, HA2 9TL
 <br/>
-Hothousenorthwood@gmail.com</p>
+{/* Hothousenorthwood@gmail.com */}
+</p>
                 <p className="flex items-center mt-2">
                   <PhoneIcon className="mr-2" />
-                  01923510520
+                  020 8429 8181
                 </p>
             </div>
             <button
